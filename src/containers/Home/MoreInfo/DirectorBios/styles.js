@@ -1,0 +1,35 @@
+import styled from 'styled-components'
+
+export const Directors = styled.div`
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 1em;
+    font-size: 1.5em;
+    justify-content: space-around;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+`
+export const Cards = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+`
+export const Intro = styled.div`
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 1em;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 5vh;
+`
+export const Bio = styled.div`
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: row;
+    justify-items: space-between;
+    font-size:0.75em;
+    font-weight: 200;
+`
