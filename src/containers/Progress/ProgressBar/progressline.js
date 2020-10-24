@@ -47,8 +47,8 @@ const ProgressLine = ({
           // and because of the new width ("widths[index]", previous one was 0)
 
           <div
-                            // There won't be additional changes in the array so the index can be used
-                            /* eslint-disable-next-line react/no-array-index-key */
+          // There won't be additional changes in the array so the index can be used
+          /* eslint-disable-next-line react/no-array-index-key */
             key={index}
             style={{
               width: widths[index],

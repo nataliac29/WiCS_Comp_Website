@@ -57,15 +57,12 @@ const PBar = ({ data3 }) => {
     }
     const ELEdu = () => {
       const num = ifEducational().number
-      console.log('num educational')
-      console.log(num)
       if (num > 1) {
         return (num - 1)
       }
       return 0
     }
     const totaladd = ESSocial() + ELSocial() + ELSpon() + ELEdu()
-    console.log(totaladd)
     if (totaladd === 1) {
       return ({ color: '#0abab54D', number: totaladd })
     }
@@ -79,7 +76,15 @@ const PBar = ({ data3 }) => {
 
     <div>
       <Welcome style={{
-        fontSize: '2em', color: 'white', paddingTop: '2vh', paddingBottom: '3vh', backgroundColor: '#e26355', paddingLeft: '5vw', marginLeft: '0vw', fontFamily: 'Permanent Marker, cursive', fontWeight: 'light',
+        fontSize: '2em',
+        color: 'white',
+        paddingTop: '2vh',
+        paddingBottom: '3vh',
+        backgroundColor: '#e26355',
+        paddingLeft: '5vw',
+        marginLeft: '0vw',
+        fontFamily: 'Permanent Marker, cursive',
+        fontWeight: 'light',
       }}
       >
         Your Progress So Far:
@@ -118,7 +123,14 @@ const PBar = ({ data3 }) => {
         </div>
       </div>
       <Welcome style={{
-        fontSize: '1em', color: 'white', paddingTop: '2.5vh', paddingBottom: '3vh', backgroundColor: '#e26355', paddingLeft: '5vw', marginLeft: '0vw', paddingRight: '5vw',
+        fontSize: '1em',
+        color: 'white',
+        paddingTop: '2.5vh',
+        paddingBottom: '3vh',
+        backgroundColor: '#e26355',
+        paddingLeft: '5vw',
+        marginLeft: '0vw',
+        paddingRight: '5vw',
       }}
       >
         You&apos;ve attended

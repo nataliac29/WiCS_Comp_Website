@@ -5,9 +5,7 @@ import { Welcome } from '../styles'
 
 
 const Profile = () => {
-  const { loading, error, data } = useQuery(GET_NAME_PROFILE, {
-    onError: err => console.log(err),
-  })
+  const { loading, error, data } = useQuery(GET_NAME_PROFILE)
   if (error) {
     return (
       <p>An error has occured.</p>

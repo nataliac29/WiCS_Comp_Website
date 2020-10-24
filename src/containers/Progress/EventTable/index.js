@@ -38,9 +38,6 @@ const useRowStyles = makeStyles({
 })
 
 const Row = ({ data, data3 }) => {
-  console.log('start')
-  console.log(data)
-  console.log('end')
   const [open, setOpen] = React.useState(false)
   const classes = useRowStyles()
   return (

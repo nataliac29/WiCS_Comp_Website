@@ -1,17 +1,15 @@
-import React, { useState } from 'react'
-import { useQuery, useMutation } from '@apollo/react-hooks'
+import React from 'react'
+import { useQuery } from '@apollo/react-hooks'
 import ImageUploader from 'react-images-upload'
 import {
-  Welcome, InnerDiv, Button, Input, Input2, Container, FormDiv, UploadDiv, OuterDiv,
+  Welcome, InnerDiv, Button, Input2, FormDiv, UploadDiv, OuterDiv,
 } from './styles'
 import { GET_EVENTS } from './queries'
 
 
 const AddEvent = () => {
-  const [type, setType] = useState('')
-  const { loading, error, data } = useQuery(GET_EVENTS, {
-    onError: err => console.log(err),
-  })
+  // const [type, setType] = useState('')
+  const { loading, error, data } = useQuery(GET_EVENTS)
   if (loading) {
     return (
       <div>
@@ -83,7 +81,7 @@ const AddEvent = () => {
                 color: 'black',
                 marginBottom: '1vh',
               }}
-              onChange={e => console.log(e.target.value)}
+              // onChange={e => console.log(e.target.value)}
             >
               {data.events.map(({
                 eventname,
