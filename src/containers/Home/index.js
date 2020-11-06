@@ -5,6 +5,7 @@ import MoreInfo from './MoreInfo/DirectorBios'
 
 const Home = () => (
   <div>
+    <p>Danika's here!</p>
     <Intro />
     <MoreInfo />
   </div>
