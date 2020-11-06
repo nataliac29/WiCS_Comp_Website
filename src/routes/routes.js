@@ -6,6 +6,7 @@ import Login from '../containers/Login'
 import Register from '../containers/Register'
 import Progress from '../containers/Progress'
 import AddEvent from '../containers/AddEvent'
+import Resources from '../containers/Resources'
 
 
 import { ROUTE_PATHS } from '../utils/constants'
@@ -39,6 +40,12 @@ export const routes = {
     path: ROUTE_PATHS.PROGRESS,
     routeComponent: PrivateRoute,
     component: Progress,
+    exact: true,
+  },
+  resources: {
+    path: ROUTE_PATHS.RESOURCES,
+    routeComponent: PublicRoute,
+    component: Resources,
     exact: true,
   },
 }

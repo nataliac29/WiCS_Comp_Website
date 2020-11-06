@@ -1,26 +1,46 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useHistory } from 'react-router-dom'
 import { useMutation } from '@apollo/react-hooks'
 import {
-  Container, LoginContainer, Input, Title, Font, PictureContainer, InnerLogin, SignupButton,
+  Container, LoginContainer, Title, Font, PictureContainer, InnerLogin, SignupButton, ErrorText,
 } from './styles'
 import { LOGIN } from './graphql'
+import { useGlobalContext } from '../../utils/globalContext'
+import useForm from '../../utils/useForm'
+import { LoginYupSchema } from '../../utils/yup'
+import { ROUTE_PATHS } from '../../utils/constants'
+import Input from '../../components/Input'
 
 const Login = () => {
+  const {
+    state, dispatch, validate, errors,
+  } = useForm({
+    email: '',
+    password: '',
+  }, LoginYupSchema)
+
   const history = useHistory()
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
-  const [login, { error, loading }] = useMutation(LOGIN, {
-    variables: {
-      email,
-      password,
+
+  const { setIsSignedIn } = useGlobalContext()
+
+  const [login, { error, loading }] = useMutation(
+    LOGIN,
+    {
+      variables: { email: state.email.trim(), password: state.password },
+      onError: () => {},
+      onCompleted: () => {
+        setIsSignedIn(true)
+        // localStorage.setItem('token', token)
+        history.push(ROUTE_PATHS.HOME)
+      },
     },
-    onError: () => {},
-    onCompleted: ({ login: { token } }) => {
-      localStorage.setItem('token', token)
-      history.push('/home')
-    },
-  })
+  )
+  const handleSubmit = async () => {
+    if (await validate()) {
+      login()
+    }
+  }
+
   if (error) {
     return <p>Invalid email or password.</p>
   }
@@ -32,21 +52,22 @@ const Login = () => {
       <Container>
         <PictureContainer>
           <img alt="" src="/login.svg" />
-          <p style={{ color: '#c93826', fontSize: '4em' }}>Welcome Back!</p>
+          <Title color="#c93826" font_weight="600" font_size="4rem">Welcome Back!</Title>
           <br />
           <br />
           <br />
-          <p style={{ color: '#c93826', fontSize: '2em' }}>Login to get comping!</p>
+          <Title color="#c93826" font_size="2rem" margin="4vh">Login to get comping!</Title>
         </PictureContainer>
         <LoginContainer>
           <InnerLogin>
-            <Title>
-              <span style={{ color: '#c93826' }}>Login </span>
-              to your account
+            <Title font_size="1.8rem" margin="40px">
+              Login to your account
             </Title>
-            <Input placeholder="email" value={email} onChange={element => setEmail(element.target.value)} />
-            <Input placeholder="password" value={password} onChange={e => setPassword(e.target.value)} />
-            <SignupButton onClick={login}>Login</SignupButton>
+            <Input placeholder="email" value={state.email} setValue={val => dispatch({ action: 'email', payload: val })} />
+            <ErrorText style={{ visibility: `${errors.email ? 'visible' : 'hidden'}` }}>{errors.email ? errors.email : 'd'}</ErrorText>
+            <Input password placeholder="password" value={state.password} setValue={val => dispatch({ action: 'password', payload: val })} />
+            <ErrorText style={{ visibility: `${errors.password ? 'visible' : 'hidden'}` }}>{errors.password ? errors.password : 'd'}</ErrorText>
+            <SignupButton onClick={handleSubmit}>Login</SignupButton>
 
             <p style={{ textAlign: 'center' }}>
               Need to make an account?

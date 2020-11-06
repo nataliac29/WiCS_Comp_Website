@@ -32,7 +32,7 @@ const Body = () => (
         alt="down arrow"
         src={DownArrow}
         style={{
-          width: '2vw', height: 'undefined', aspectRatio: '1', marginLeft: '50vw',
+          width: '2vw', height: 'undefined', aspectRatio: '1', marginLeft: '50vw', cursor: 'pointer',
         }}
       />
     </Link>

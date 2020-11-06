@@ -4,4 +4,5 @@ export const ROUTE_PATHS = {
   REGISTER: '/register',
   ADDEVENT: '/addevent',
   PROGRESS: '/progress',
+  RESOURCES: '/resources',
 }
