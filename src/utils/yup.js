@@ -7,6 +7,7 @@ import {
   PASSWORD_LENGTH,
   FIRST_NAME_REQUIRED,
   LAST_NAME_REQUIRED,
+  GENERIC_REQUIRED,
 } from './errorMessages'
 
 const email = yup
@@ -29,3 +30,12 @@ const lastName = yup
   .string()
   .trim()
   .required(LAST_NAME_REQUIRED)
+
+const nulledString = yup
+  .string()
+  .transform(v => (v === '' ? null : v))
+
+export const LoginYupSchema = yup.object().shape({
+  email,
+  password: yup.string().required(PASSWORD_REQUIRED),
+})
