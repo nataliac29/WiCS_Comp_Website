@@ -1,66 +1,116 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import { useMutation } from '@apollo/react-hooks'
+
 import {
-  Container, LoginContainer, Input, Title, Font, PictureContainer, InnerLogin, SignupButton, Text,
+  SignupButton, ErrorText,
 } from './styles'
+
+import Input from '../../components/Input'
+import SignIn from '../../components/SignIn'
+import Title from '../../components/SignIn/Title'
+
 import { REGISTER } from './graphql'
 
+import useForm from '../../utils/useForm'
+import { RegisterYupSchema } from '../../utils/yup'
+
+import { useGlobalContext } from '../../utils/globalContext'
+
 const Login = () => {
+  const [DBError, setError] = useState('')
+  const {
+    state, dispatch, validate, errors,
+  } = useForm({
+    email: '',
+    password: '',
+    firstName: '',
+    lastName: '',
+    year: '',
+  }, RegisterYupSchema)
   const history = useHistory()
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
-  const [firstName, setFirstName] = useState('')
-  const [lastName, setLastName] = useState('')
-  const [year, setYear] = useState('')
-  const [register, { error, loading }] = useMutation(REGISTER, {
+  const { setIsSignedIn } = useGlobalContext()
+  const [register, { loading }] = useMutation(REGISTER, {
     variables: {
-      email,
-      password,
-      firstName,
-      lastName,
-      year,
+      email: state.email,
+      password: state.password,
+      firstName: state.firstName,
+      lastName: state.lastName,
+      year: state.year,
     },
-    onError: () => { },
-    onCompleted: ({ login: { token } }) => {
-      localStorage.setItem('token', token)
-      history.push('/home')
+    onError: err => {
+      setError(err.graphQLErrors && err.graphQLErrors.length ? err.graphQLErrors[0].message : 'An error occurred')
+    },
+    onCompleted: () => {
+      setIsSignedIn(true)
+      history.push('/')
     },
   })
-  if (error) {
-    return <p>Invalid email or password.</p>
-  }
   if (loading) {
-    return <p>loading</p>
+    return (
+      <SignIn isLoading>
+        <Title color="#c93826" fontWeight="600" fontSize="4rem">Welcome to WiCS Comp!</Title>
+        <Title color="#c93826" fontSize="2rem" margin="4vh">Register to get comping!</Title>
+        <p>Loading</p>
+      </SignIn>
+    )
+  }
+  const handleSubmit = async () => {
+    if (await validate()) {
+      register()
+    }
   }
   return (
-    <Font>
-      <Container>
-        <PictureContainer>
-          <img alt="" src="/login.svg" />
-          <Text size="3em">Welcome to WiCS Comp!</Text>
-          <br />
-          <br />
-          <br />
-          <Text>Register to get comping!</Text>
-        </PictureContainer>
-        <LoginContainer>
-          <InnerLogin>
-            <Title>
-              <span style={{ color: '#c93826' }}>Register </span>
-              for your account
-            </Title>
-            <Input placeholder="First Name" value={firstName} onChange={e => setFirstName(e.target.value)} />
-            <Input placeholder="Last Name" value={lastName} onChange={e => setLastName(e.target.value)} />
-            <Input placeholder="email" value={email} onChange={e => setEmail(e.target.value)} />
-
-            <Input placeholder="password" value={password} type="password" onChange={e => setPassword(e.target.value)} />
-            <Input placeholder="year" value={year} onChange={e => setYear(e.target.value)} />
-            <SignupButton onClick={register}>Login</SignupButton>
-          </InnerLogin>
-        </LoginContainer>
-      </Container>
-    </Font>
+    <SignIn>
+      <Title color="#c93826" fontWeight="600" fontSize="4rem">Welcome to WiCS Comp!</Title>
+      <Title color="#c93826" fontSize="2rem" margin="4vh">Register to get comping!</Title>
+      <Title fontSize="1.8rem" margin="40px">
+        Register for your account
+      </Title>
+      <>
+        <Input
+          placeholder="First Name"
+          value={state.firstName}
+          setValue={val => dispatch({ action: 'firstName', payload: val })}
+        />
+        <ErrorText style={{ visibility: `${errors.firstName ? 'visible' : 'hidden'}` }}>{errors.firstName}</ErrorText>
+      </>
+      <>
+        <Input
+          placeholder="Last Name"
+          value={state.lastName}
+          setValue={val => dispatch({ action: 'lastName', payload: val })}
+        />
+        <ErrorText style={{ visibility: `${errors.lastName ? 'visible' : 'hidden'}` }}>{errors.lastName}</ErrorText>
+      </>
+      <>
+        <Input
+          placeholder="email"
+          value={state.email}
+          setValue={val => dispatch({ action: 'email', payload: val })}
+        />
+        <ErrorText style={{ visibility: `${errors.email ? 'visible' : 'hidden'}` }}>{errors.email}</ErrorText>
+      </>
+      <>
+        <Input
+          placeholder="password"
+          value={state.password}
+          type="password"
+          setValue={val => dispatch({ action: 'password', payload: val })}
+        />
+        <ErrorText style={{ visibility: `${(errors.password || DBError) ? 'visible' : 'hidden'}` }}>{errors.password}</ErrorText>
+      </>
+      <>
+        <Input
+          placeholder="year"
+          value={state.year}
+          setValue={val => dispatch({ action: 'year', payload: val })}
+          type="number"
+        />
+        <ErrorText style={{ visibility: `${(errors.year || DBError) ? 'visible' : 'hidden'}` }}>{errors.year || DBError}</ErrorText>
+      </>
+      <SignupButton onClick={handleSubmit}>Login</SignupButton>
+    </SignIn>
   )
 }
 

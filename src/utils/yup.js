@@ -8,6 +8,7 @@ import {
   FIRST_NAME_REQUIRED,
   LAST_NAME_REQUIRED,
   GENERIC_REQUIRED,
+  YEAR_VALID,
 } from './errorMessages'
 
 const email = yup
@@ -19,7 +20,6 @@ const email = yup
 const password = yup
   .string()
   .required(PASSWORD_REQUIRED)
-  .min(6, PASSWORD_LENGTH)
 
 const firstName = yup
   .string()
@@ -35,7 +35,21 @@ const nulledString = yup
   .string()
   .transform(v => (v === '' ? null : v))
 
+const year = yup
+  .number()
+  .typeError('Valid year is required')
+  .min(2021)
+  .lessThan(10000)
+  .required(GENERIC_REQUIRED)
+
 export const LoginYupSchema = yup.object().shape({
   email,
   password: yup.string().required(PASSWORD_REQUIRED),
+})
+export const RegisterYupSchema = yup.object().shape({
+  email,
+  password,
+  firstName,
+  lastName,
+  year,
 })
