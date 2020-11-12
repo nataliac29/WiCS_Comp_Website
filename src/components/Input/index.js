@@ -3,11 +3,11 @@ import React from 'react'
 import { InputStyle } from './styles'
 
 const Input = ({
-  value, setValue, password, placeholder,
+  value, setValue, type, placeholder,
 }) => (
   <InputStyle
-    id={password ? 'standard-password-input' : 'standard-basic'}
-    type={password ? 'password' : 'text'}
+    id={type ? 'standard-password-input' : 'standard-basic'}
+    type={type}
     value={value}
     onChange={e => setValue(e.target.value)}
     placeholder={placeholder}
