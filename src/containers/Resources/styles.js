@@ -78,15 +78,6 @@ export const Description = styled.div`
     margin-top: 2vh;
     font-size: 1.5em;
     color: grey;
-
-`
-export const LinkContainer = styled.div`
-    display: flex;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 'medium';
-    letter-spacing:2px;
-    line-height: 2em;
-    font-size: 3em;
 `
 export const Button = styled.div`
     background-color: #4CAF50; /* Green */
@@ -99,8 +90,8 @@ export const Button = styled.div`
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    margin-left: 5vw;
     margin-right: 5vw;
     margin-top: 2vh;
-}
 
 `
