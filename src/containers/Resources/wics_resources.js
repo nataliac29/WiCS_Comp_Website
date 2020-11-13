@@ -1,6 +1,5 @@
 import React from 'react'
-import {Subtitle, LineBreak} from './styles'
-
+import {Subtitle} from './styles'
 
 const WicsResources = () => (
   <div>
