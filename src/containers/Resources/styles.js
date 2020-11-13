@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 
+
 export const MenuContainer = styled.div`
     height: 15vh;
     display: inline;
@@ -23,5 +24,25 @@ export const ButtonContainer = styled.div`
     justify-content: center;
     margin-top: 5vh;
     colour
-
+`
+export const Welcome = styled.div`
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 'medium';
+    letter-spacing:2px;
+    line-height: 1em;
+    margin-left: 5vw;
+    margin-top: 8vh;
+    font-size: 3em;
+`
+export const Subtitle = styled.div`
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 'medium';
+    letter-spacing:2px;
+    line-height: 1em;
+    margin-left: 5vw;
+    margin-top: 8vh;
+    font-size: 3em;
+    color: grey;
 `
