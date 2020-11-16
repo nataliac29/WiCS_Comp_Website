@@ -1,26 +1,27 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import './progressline.css'
 
 const ProgressLine = ({ done }) => {
-  const [style, setStyle] = React.useState({});
+  const [style, setStyle] = React.useState({})
 
   setTimeout(() => {
     const newStyle = {
       opacity: 1,
-      width: `${done}%`
+      width: `${done}%`,
     }
-    setStyle(newStyle);
-  }, 1000);
+    setStyle(newStyle)
+  }, 1000)
 
   return (
     <div className="progress">
       <div className="progress-done" style={style}>
-        {done}%
+        {done}
+        %
       </div>
     </div>
   )
 }
-
+// , { useEffect, useState }
 // const ProgressLine = ({
 //   label,
 //   backgroundColor = '#e5e5e5',
