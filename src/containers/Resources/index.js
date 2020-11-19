@@ -7,17 +7,19 @@ import CareerResources from './career_resources'
 import CodeResources from './code_resources'
 import WicsResources from './wics_resources'
 import WomenCS from './women_in_cs'
+import { Welcome } from './styles'
 
 const Resources = () => (
   <>
-    <p>Resources page!</p>
+    <Welcome>Resources</Welcome>
     <WicsResourcesMenu />
     <CareerResourcesMenu />
     <CodeResourcesMenu />
     <WomenResourcesMenu />
+
+    <WicsResources />
     <CareerResources />
     <CodeResources />
-    <WicsResources />
     <WomenCS />
   </>
 )
