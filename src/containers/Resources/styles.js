@@ -46,3 +46,14 @@ export const Subtitle = styled.div`
     font-size: 3em;
     color: grey;
 `
+export const Subheading = styled.div`
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 'medium';
+    letter-spacing:2px;
+    line-height: 1em;
+    margin-left: 5vw;
+    margin-top: 8vh;
+    font-size: 3em;
+    color: black;
+`
