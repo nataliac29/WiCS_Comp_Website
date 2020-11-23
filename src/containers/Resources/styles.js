@@ -55,5 +55,17 @@ export const Subheading = styled.div`
     margin-left: 5vw;
     margin-top: 8vh;
     font-size: 3em;
-    color: black;
+    color: #e36154;
+`
+export const Description = styled.div`
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 'medium';
+    letter-spacing:2px;
+    line-height: 1.5em;
+    margin-left: 5vw;
+    margin-top: 8vh;
+    font-size: 1em;
+    color: grey;
+
 `

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Subtitle, Subheading } from './styles'
+import { Subtitle, Subheading, Description } from './styles'
 
 const WicsResources = () => (
   <div>
@@ -9,8 +9,18 @@ const WicsResources = () => (
     }}
     />
     <Subheading>Mentorship</Subheading>
-    <Subheading>Group Outing</Subheading>
+    <Description> 
+      Each year, WiCS organizes a mentorship program designed to match students who are
+       interested in CS with upperclassmen mentors. WiCS will sponsor an activity between 
+       mentors and metees each month. This is a low and flexible time commitment, where you 
+       can get advice about classes, concentrations, internships, and build strong relationships
+       with upperclass students and others in the WiCS community. That’s right, FREE FOOD, 
+       FRIENDSHIP, AND ADVICE on your own schedule! 
+    </Description>
+    <Subheading>Group Outings</Subheading>
+
     <Subheading>Leadership Opportunities</Subheading>
+
   </div>
 )
 
