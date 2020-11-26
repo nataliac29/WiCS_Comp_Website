@@ -53,7 +53,7 @@ export const Subheading = styled.div`
     letter-spacing:2px;
     line-height: 1em;
     margin-left: 5vw;
-    margin-top: 8vh;
+    margin-top: 4vh;
     font-size: 3em;
     color: #e36154;
 `
@@ -64,7 +64,8 @@ export const Description = styled.div`
     letter-spacing:2px;
     line-height: 1.5em;
     margin-left: 5vw;
-    margin-top: 8vh;
+    margin-right: 5vw;
+    margin-top: 2vh;
     font-size: 1em;
     color: grey;
 
