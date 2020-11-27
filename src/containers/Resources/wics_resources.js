@@ -9,23 +9,23 @@ const WicsResources = () => (
     }}
     />
     <Subheading>Mentorship</Subheading>
-    <Description> 
+    <Description>
       Each year, WiCS organizes a mentorship program designed to match students who are
-       interested in CS with upperclassmen mentors. WiCS will sponsor an activity between 
-       mentors and metees each month. This is a low and flexible time commitment, where you 
-       can get advice about classes, concentrations, internships, and build strong relationships
-       with upperclass students and others in the WiCS community. That’s right, FREE FOOD, 
-       FRIENDSHIP, AND ADVICE on your own schedule! 
+      interested in CS with upperclassmen mentors. WiCS will sponsor an activity between
+      mentors and metees each month. This is a low and flexible time commitment, where you
+      can get advice about classes, concentrations, internships, and build strong relationships
+      with upperclass students and others in the WiCS community. That’s right, FREE FOOD,
+      FRIENDSHIP, AND ADVICE on your own schedule!
     </Description>
 
     <Subheading>Leadership Opportunities</Subheading>
-    <Description> 
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+    <Description>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco lab
+      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proi
       sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </Description>  
+    </Description>
 
   </div>
 )
