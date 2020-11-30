@@ -1,5 +1,5 @@
 import React from 'react'
-import { Subtitle, Subheading, Description } from './styles'
+import { Subtitle, Subheading, Description, Button } from './styles'
 
 const WicsResources = () => (
   <div>
@@ -16,16 +16,22 @@ const WicsResources = () => (
       can get advice about classes, concentrations, internships, and build strong relationships
       with upperclass students and others in the WiCS community. That’s right, FREE FOOD,
       FRIENDSHIP, AND ADVICE on your own schedule!
-    </Description>
 
-    <Subheading name="leadership_opportunities">Leadership Opportunities</Subheading>
+      This mentorship program is one of the largest on campus--over 200 women in tech participate
+      and have said that WiCS mentorship has been an incredibly beneficial experience.
+    </Description>
+    <Button>
+      <a style={{color:"white", textDecoration: "none"}} target="wics mentorship" href="https://www.harvardwics.com/mentorships">Read more and sign up</a>
+    </Button>
+
+    {/* <Subheading>Leadership Opportunities</Subheading>
     <Description>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
       labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco lab
       nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
       velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proi
       sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </Description>
+    </Description> */}
 
   </div>
 )
