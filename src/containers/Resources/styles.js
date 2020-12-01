@@ -64,7 +64,7 @@ export const Subheading = styled.div`
     line-height: 1em;
     margin-left: 5vw;
     margin-top: 4vh;
-    font-size: 3em;
+    font-size: 2.5em;
     color: #e36154;
 `
 export const Description = styled.div`
@@ -76,7 +76,7 @@ export const Description = styled.div`
     margin-left: 5vw;
     margin-right: 5vw;
     margin-top: 2vh;
-    font-size: 1em;
+    font-size: 1.5em;
     color: grey;
 
 `
@@ -99,7 +99,6 @@ export const Button = styled.div`
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    margin-left: 5vw;
     margin-right: 5vw;
     margin-top: 2vh;
 }
