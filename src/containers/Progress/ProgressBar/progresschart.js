@@ -20,7 +20,7 @@ import Emoji from '../emojis'
 const theme = createMuiTheme({
   typography: {
     fontFamily: [
-      'Roboto',
+      'Montserrat',
       'sans-serif',
     ].join(','),
     fontWeight: 600,
@@ -53,15 +53,15 @@ const Row = ({ data }) => {
 }
 
 const ProgressChart = ({ data1 }) => (
-  <div style={{ display: 'flex', flexDirection: 'column' }}>
-    <ThemeProvider theme={theme}>
+  <ThemeProvider theme={theme}>
+    <div style={{ display: 'flex', flexDirection: 'column' }}>
       <link
         rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+        href="https://fonts.google.com/specimen/Inter?query=inter"
       />
 
       <div style={{ display: 'flex' }}>
-        <div style={{ width: '2vw' }} />
+        <div style={{ width: '30%' }} />
         <TableContainer component={Paper}>
           <Table>
             <TableHead>
@@ -79,10 +79,10 @@ const ProgressChart = ({ data1 }) => (
             </TableBody>
           </Table>
         </TableContainer>
-        <div style={{ width: '2vw' }} />
+        <div style={{ width: '30%' }} />
       </div>
-    </ThemeProvider>
-  </div>
+    </div>
+  </ThemeProvider>
 )
 
 
