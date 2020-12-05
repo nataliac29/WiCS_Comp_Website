@@ -4,7 +4,6 @@ import ProgressLine from './progressline'
 import ProgressChart from './progresschart'
 // import './progressline.css'
 
-
 const PBar = ({ data3 }) => {
   const ifSmallSocial = () => {
     const num = data3.filter(el => el.type === 'SmallSocial')
@@ -90,7 +89,7 @@ const PBar = ({ data3 }) => {
       >
         Your Progress So Far:
       </Welcome>
-      <div>
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
         <ProgressLine done={
           ((ifSmallSocial().complete
             + ifLargeSocial().complete
