@@ -26,6 +26,8 @@
 	width: 0;
 	opacity: 0;
 	transition: 1s ease 0.3s;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
 }
 
 

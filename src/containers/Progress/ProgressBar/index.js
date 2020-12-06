@@ -1,7 +1,7 @@
 import React from 'react'
-import { Welcome } from '../styles'
-import ProgressLine from './progressline'
-import ProgressChart from './progresschart'
+import { Welcome, ProgressContainer } from '../styles'
+import ProgressLine from './ProgressLine'
+import ProgressChart from './ProgressChart'
 // import './progressline.css'
 
 const PBar = ({ data3 }) => {
@@ -76,55 +76,58 @@ const PBar = ({ data3 }) => {
   return (
     <div>
       <Welcome style={{
-        fontSize: '2em',
-        color: 'white',
+        fontSize: '35px',
+        lineHeight: '1',
+        fontWeight: '900',
+        color: '#e36055',
+        letterSpacing: '-0.03em',
         paddingTop: '2vh',
         paddingBottom: '3vh',
-        backgroundColor: '#e26355',
         paddingLeft: '5vw',
         marginLeft: '0vw',
-        fontFamily: 'Permanent Marker, cursive',
-        fontWeight: 'light',
+        fontFamily: 'Montserrat, sans-serif',
+        WebkitFontSmoothing: 'antialiased',
       }}
       >
         Your Progress So Far:
       </Welcome>
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
-        <ProgressLine done={
+      <ProgressContainer>
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <ProgressLine done={
           ((ifSmallSocial().complete
             + ifLargeSocial().complete
             + ifSponsorship().complete
             + ifEducational().complete
             + ifAdditional().complete) / 0.06).toFixed(1)
         }
-        />
-      </div>
-      <div>
-        <ProgressChart
-          data1={[
-            {
-              category: 'Small Social', status: (ifSmallSocial().complete === 1) ? 'true' : 'false', complete: ifSmallSocial().complete, required: 1,
-            },
-            {
-              category: 'Large Social', status: (ifLargeSocial().complete === 1) ? 'true' : 'false', complete: ifLargeSocial().complete, required: 1,
-            },
-            {
-              category: 'Sponsorship', status: (ifSponsorship().complete === 1) ? 'true' : 'false', complete: ifSponsorship().complete, required: 1,
-            },
-            {
-              category: 'Educational', status: (ifEducational().complete === 1) ? 'true' : 'false', complete: ifEducational().complete, required: 1,
-            },
-            {
-              category: 'Additional', status: (ifAdditional().complete === 2) ? 'true' : 'false', complete: ifAdditional().complete, required: 2,
-            },
-          ]}
-          isDark
-          bordered
-          striped
-          hoverable
-        />
-      </div>
-
+          />
+        </div>
+        <div>
+          <ProgressChart
+            data1={[
+              {
+                category: 'Small Social', status: (ifSmallSocial().complete === 1) ? 'true' : 'false', complete: ifSmallSocial().complete, required: 1,
+              },
+              {
+                category: 'Large Social', status: (ifLargeSocial().complete === 1) ? 'true' : 'false', complete: ifLargeSocial().complete, required: 1,
+              },
+              {
+                category: 'Sponsorship', status: (ifSponsorship().complete === 1) ? 'true' : 'false', complete: ifSponsorship().complete, required: 1,
+              },
+              {
+                category: 'Educational', status: (ifEducational().complete === 1) ? 'true' : 'false', complete: ifEducational().complete, required: 1,
+              },
+              {
+                category: 'Additional', status: (ifAdditional().complete === 2) ? 'true' : 'false', complete: ifAdditional().complete, required: 2,
+              },
+            ]}
+            isDark
+            bordered
+            striped
+            hoverable
+          />
+        </div>
+      </ProgressContainer>
     </div>
 
 

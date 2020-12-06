@@ -16,7 +16,7 @@ import Paper from '@material-ui/core/Paper'
 // import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp'
 // import { Welcome } from '../styles'
 import { TableStyle } from './styles'
-import Emoji from '../emojis'
+import Emoji from '../../emojis'
 
 const theme = createMuiTheme({
   typography: {
@@ -55,12 +55,11 @@ const Row = ({ data }) => {
 
 const ProgressChart = ({ data1 }) => (
   <ThemeProvider theme={theme}>
-    <div style={{ display: 'flex', flexDirection: 'column' }}>
+    <div style={{ marginBottom: '2vh' }}>
       <link
         rel="stylesheet"
         href="https://fonts.google.com/specimen/Inter?query=inter"
       />
-
       <div style={{ display: 'flex' }}>
         <div style={{ width: '30%' }} />
         <TableContainer component={Paper}>
