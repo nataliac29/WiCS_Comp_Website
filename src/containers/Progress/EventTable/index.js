@@ -100,7 +100,17 @@ const EventTable = ({ data1, data3 }) => (
         href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
       />
       <Welcome style={{
-        fontSize: '2em', color: 'white', paddingTop: '2vh', paddingBottom: '3vh', backgroundColor: '#e26355', paddingLeft: '5vw', marginLeft: '0vw', fontFamily: 'Permanent Marker, cursive', fontWeight: 'light',
+        fontSize: '35px',
+        lineHeight: '1',
+        fontWeight: '900',
+        color: '#e36055',
+        letterSpacing: '-0.03em',
+        paddingTop: '3.5vh',
+        paddingBottom: '2vh',
+        paddingLeft: '5vw',
+        marginLeft: '0vw',
+        fontFamily: 'Montserrat, sans-serif',
+        WebkitFontSmoothing: 'antialiased',
       }}
       >
         Events you&apos;ve attended:

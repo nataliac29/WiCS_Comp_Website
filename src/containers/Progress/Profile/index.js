@@ -20,7 +20,6 @@ const Profile = () => {
     <div>
       <Welcome style={{ fontSize: '3em', marginTop: '8vh', marginLeft: '5vw' }}>
         {`${data.viewer.firstName} ${data.viewer.lastName}`}
-        &apos;s Progress
       </Welcome>
       <Welcome style={{
         fontSize: '1em', marginTop: '1vh', fontWeight: 'light', marginBottom: '5vh', marginLeft: '5vw',
