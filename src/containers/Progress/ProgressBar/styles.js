@@ -1,6 +1,7 @@
 import React from 'react'
 import { styled } from '@material-ui/core/styles'
 import Table from '@material-ui/core/Table'
+import './progresschart.css'
 
 export const TableStyle = styled(({ ...rest }) => <Table {...rest} />)({
   fontFamily: [
@@ -11,4 +12,5 @@ export const TableStyle = styled(({ ...rest }) => <Table {...rest} />)({
   letterSpacing: '2px',
   lineHeight: '1em',
   color: 'blue',
+  alignItems: "center"
 })

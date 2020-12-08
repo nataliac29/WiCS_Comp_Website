@@ -24,6 +24,7 @@
     "react-scroll": "^1.8.1",
     "react-spinners": "^0.9.0",
     "styled-components": "^4.4.0",
+    "typeface-montserrat": "^1.1.13",
     "yup": "^0.28.4"
   },
   "devDependencies": {

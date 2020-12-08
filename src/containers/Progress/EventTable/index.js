@@ -15,12 +15,12 @@ import Paper from '@material-ui/core/Paper'
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown'
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp'
 import { Welcome } from '../styles'
-
+// import PropTypes from 'prop-types';
 
 const theme = createMuiTheme({
   typography: {
     fontFamily: [
-      'Roboto',
+      'Montserrat',
       'sans-serif',
     ].join(','),
     fontWeight: 600,
@@ -41,7 +41,7 @@ const Row = ({ data, data3 }) => {
   const [open, setOpen] = React.useState(false)
   const classes = useRowStyles()
   return (
-    <>
+    <React.Fragment>
       <TableRow className={classes.root}>
         <TableCell>
           <IconButton aria-label="expand row" size="small" onClick={() => setOpen(!open)}>
@@ -65,14 +65,23 @@ const Row = ({ data, data3 }) => {
               <Table size="small" aria-label="purchases">
                 <TableHead>
                   <TableRow>
-                    <TableCell />
-                    <TableCell>Submitted Description</TableCell>
-                    <TableCell align="left">Submitted Photo</TableCell>
-                    <TableCell align="left">Submitted At </TableCell>
+                    <TableCell align="left">Submitted Description</TableCell>
+                    <TableCell align="right">Submitted Photo</TableCell>
+                    <TableCell align="right">Submitted At </TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
-                  {(data3.filter(eid => eid.eventId === data.id)).map(ci => (
+                  {
+                    (data3.filter(eid => eid.eventId === data.id)).map((historyRow) => (
+                      <TableRow key={historyRow.id}>
+                        <TableCell component="th" scope="row">
+                          {historyRow.des}
+                        </TableCell>
+                        <TableCell>{historyRow.photo}</TableCell>
+                        <TableCell align="right">{historyRow.addedAt}</TableCell>
+                      </TableRow>
+                    ))
+                  /* {(data3.filter(eid => eid.eventId === data.id)).map(ci => (
                     <TableRow key={ci.id}>
                       <TableCell />
                       <TableCell component="th" scope="row">
@@ -81,14 +90,14 @@ const Row = ({ data, data3 }) => {
                       <TableCell align="left">{ci.photo}</TableCell>
                       <TableCell align="left">{ci.addedAt}</TableCell>
                     </TableRow>
-                  ))}
+                  ))} */}
                 </TableBody>
               </Table>
             </Box>
           </Collapse>
         </TableCell>
       </TableRow>
-    </>
+    </React.Fragment>
   )
 }
 

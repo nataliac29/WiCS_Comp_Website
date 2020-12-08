@@ -5,7 +5,7 @@ import EventTable from './EventTable'
 import PBar from './ProgressBar'
 import { GET_VIEWER_EVENTS } from './queries'
 import { GET_VIEWER_TRACK_EVENTS } from './EventTable/queries'
-
+import "typeface-montserrat";
 
 const Progress = () => {
   const { loading, error, data } = useQuery(GET_VIEWER_EVENTS)
@@ -35,14 +35,16 @@ const Progress = () => {
   return (
     <div>
       <Profile />
+
       <PBar
         style={{ backgroundColor: '#e26355' }}
         data3={data.userEvents}
       />
-      <div style={{ backgroundColor: '#e26355', paddingTop: '0vh', paddingBottom: '5vh' }}>
-        <EventTable data1={data.userEvents} data3={data2.userTrackEvents} />
-      </div>
-    </div>
+
+
+      <EventTable style={{ backgroundColor: '#e26355', paddingTop: '0vh', paddingBottom: '5vh' }} data1={data.userEvents} data3={data2.userTrackEvents} />
+
+    </div >
 
   )
 }

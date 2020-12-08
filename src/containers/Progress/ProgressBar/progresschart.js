@@ -17,12 +17,13 @@ import Paper from '@material-ui/core/Paper'
 // import { Welcome } from '../styles'
 import { TableStyle } from './styles'
 import Emoji from '../emojis'
+import './progresschart.css'
 
 const theme = createMuiTheme({
   typography: {
     fontFamily: [
       'Montserrat',
-      'sans-serif',
+      "sans-serif"
     ].join(','),
     fontWeight: 600,
     letterSpacing: '2px',
@@ -58,11 +59,11 @@ const ProgressChart = ({ data1 }) => (
     <div style={{ display: 'flex', flexDirection: 'column' }}>
       <link
         rel="stylesheet"
-        href="https://fonts.google.com/specimen/Inter?query=inter"
+        href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
       />
 
       <div style={{ display: 'flex' }}>
-        <div style={{ width: '30%' }} />
+        <div style={{ width: '30%', alignItems: "center" }} />
         <TableContainer component={Paper}>
           <TableStyle>
             <TableHead>
