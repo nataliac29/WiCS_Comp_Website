@@ -23,7 +23,7 @@ const theme = createMuiTheme({
   typography: {
     fontFamily: [
       'Montserrat',
-      "sans-serif"
+      'sans-serif',
     ].join(','),
     fontWeight: 600,
     letterSpacing: '2px',
@@ -45,10 +45,10 @@ const Row = ({ data }) => {
   return (
     <>
       <TableRow className={classes.root}>
-        <TableCell>{data.category}</TableCell>
-        <TableCell>{(data.status === 'true') ? <Emoji symbol="✅" label="complete" /> : <Emoji symbol="❌" label="incomplete" />}</TableCell>
-        <TableCell>{data.complete}</TableCell>
-        <TableCell>{data.required}</TableCell>
+        <TableCell >{data.category}</TableCell>
+        <TableCell align='center'>{(data.status === 'true') ? <Emoji symbol="✅" label="complete" /> : <Emoji symbol="❌" label="incomplete" />}</TableCell>
+        <TableCell align='center'>{data.complete}</TableCell>
+        <TableCell align='center'>{data.required}</TableCell>
       </TableRow>
     </>
   )
@@ -63,15 +63,15 @@ const ProgressChart = ({ data1 }) => (
       />
 
       <div style={{ display: 'flex' }}>
-        <div style={{ width: '30%', alignItems: "center" }} />
+        <div style={{ width: '30%', alignItems: 'center' }} />
         <TableContainer component={Paper}>
           <TableStyle>
             <TableHead>
               <TableRow>
                 <TableCell>Category</TableCell>
-                <TableCell>Status</TableCell>
-                <TableCell>Completed</TableCell>
-                <TableCell>Required</TableCell>
+                <TableCell align='center'>Status</TableCell>
+                <TableCell align='center'>Completed</TableCell>
+                <TableCell align='center'>Required</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>

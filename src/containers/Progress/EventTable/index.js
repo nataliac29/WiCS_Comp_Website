@@ -41,7 +41,7 @@ const Row = ({ data, data3 }) => {
   const [open, setOpen] = React.useState(false)
   const classes = useRowStyles()
   return (
-    <React.Fragment>
+    <>
       <TableRow className={classes.root}>
         <TableCell>
           <IconButton aria-label="expand row" size="small" onClick={() => setOpen(!open)}>
@@ -72,7 +72,7 @@ const Row = ({ data, data3 }) => {
                 </TableHead>
                 <TableBody>
                   {
-                    (data3.filter(eid => eid.eventId === data.id)).map((historyRow) => (
+                    (data3.filter(eid => eid.eventId === data.id)).map(historyRow => (
                       <TableRow key={historyRow.id}>
                         <TableCell component="th" scope="row">
                           {historyRow.des}
@@ -97,7 +97,7 @@ const Row = ({ data, data3 }) => {
           </Collapse>
         </TableCell>
       </TableRow>
-    </React.Fragment>
+    </>
   )
 }
 
@@ -114,8 +114,10 @@ const EventTable = ({ data1, data3 }) => (
       >
         Events you&apos;ve attended:
       </Welcome>
+      <br>
+      </br>
       <div style={{ display: 'flex' }}>
-        <div style={{ width: '2vw' }} />
+        <div style={{ width: '30%' }} />
         <TableContainer component={Paper}>
           <Table aria-label="collapsible table">
             <TableHead>
@@ -134,9 +136,14 @@ const EventTable = ({ data1, data3 }) => (
             </TableBody>
           </Table>
         </TableContainer>
-        <div style={{ width: '2vw' }} />
+
+        <div style={{ width: '30%' }} />
       </div>
+
+
     </ThemeProvider>
+    <br>
+    </br>
   </div>
 )
 

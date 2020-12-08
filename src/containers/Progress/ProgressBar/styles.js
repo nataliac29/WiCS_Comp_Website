@@ -12,5 +12,5 @@ export const TableStyle = styled(({ ...rest }) => <Table {...rest} />)({
   letterSpacing: '2px',
   lineHeight: '1em',
   color: 'blue',
-  alignItems: "center"
+  alignItems: 'center',
 })
