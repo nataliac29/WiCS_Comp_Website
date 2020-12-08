@@ -4,7 +4,7 @@ import { ThemeProvider } from '@material-ui/styles'
 // import Box from '@material-ui/core/Box'
 // import Collapse from '@material-ui/core/Collapse'
 // import IconButton from '@material-ui/core/IconButton'
-import Table from '@material-ui/core/Table'
+// import Table from '@material-ui/core/Table'
 import TableBody from '@material-ui/core/TableBody'
 import TableCell from '@material-ui/core/TableCell'
 import TableContainer from '@material-ui/core/TableContainer'
@@ -15,6 +15,7 @@ import Paper from '@material-ui/core/Paper'
 // import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown'
 // import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp'
 // import { Welcome } from '../styles'
+import { TableStyle } from './styles'
 import Emoji from '../emojis'
 
 const theme = createMuiTheme({
@@ -63,7 +64,7 @@ const ProgressChart = ({ data1 }) => (
       <div style={{ display: 'flex' }}>
         <div style={{ width: '30%' }} />
         <TableContainer component={Paper}>
-          <Table>
+          <TableStyle>
             <TableHead>
               <TableRow>
                 <TableCell>Category</TableCell>
@@ -77,7 +78,7 @@ const ProgressChart = ({ data1 }) => (
                 <Row id={data.id} data={data} />
               ))}
             </TableBody>
-          </Table>
+          </TableStyle>
         </TableContainer>
         <div style={{ width: '30%' }} />
       </div>
