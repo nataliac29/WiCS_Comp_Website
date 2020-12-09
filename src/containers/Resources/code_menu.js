@@ -3,6 +3,7 @@ import {
   Collapse, Button, CardBody, Card,
 } from 'reactstrap'
 import 'bootstrap/dist/css/bootstrap.css'
+import { Link } from 'react-scroll'
 import { MenuContainer } from './styles'
 
 const CodeResourcesMenu = () => {
@@ -17,15 +18,21 @@ const CodeResourcesMenu = () => {
         <Collapse isOpen={isOpen}>
           <Card>
             <CardBody>
-              <p>
-                Beginners
-              </p>
-              <p>
-                Practice Coding
-              </p>
-              <p>
-                Interview Preparation
-              </p>
+              <div>
+                <Link to="for_beginners" smooth class="Subheading" style={{ color: '#e36154' }}>
+                  For Beginners
+                </Link>
+              </div>
+              <div>
+                <Link to="practice" smooth class="Subheading" style={{ color: '#e36154' }}>
+                  Practice
+                </Link>
+              </div>
+              <div>
+                <Link to="interview_prep" smooth class="Subheading" style={{ color: '#e36154' }}>
+                  Interview Prep
+                </Link>
+              </div>
             </CardBody>
           </Card>
         </Collapse>

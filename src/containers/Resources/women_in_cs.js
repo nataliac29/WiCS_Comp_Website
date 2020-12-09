@@ -8,7 +8,7 @@ const WomenCS = () => (
       color: '#e36154', backgroundColor: '#e36154', height: 2, borderColor: '#e36154', width: '600px',
     }}
     />
-    <Subheading>Women in CS Spotlight</Subheading>
+    <Subheading name="women_spotlight">Women in CS Spotlight</Subheading>
     <Description>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
       labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco lab
@@ -17,7 +17,7 @@ const WomenCS = () => (
       sunt in culpa qui officia deserunt mollit anim id est laborum.
     </Description>
 
-    <Subheading>Facts & Figures About Women in STEM</Subheading>
+    <Subheading name="women_facts">Facts & Figures About Women in STEM</Subheading>
     <Description>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
       labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco lab

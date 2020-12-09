@@ -8,7 +8,7 @@ const WicsResources = () => (
       color: '#e36154', backgroundColor: '#e36154', height: 2, borderColor: '#e36154', width: '600px',
     }}
     />
-    <Subheading>Mentorship</Subheading>
+    <Subheading name="mentorships">Mentorship</Subheading>
     <Description>
       Each year, WiCS organizes a mentorship program designed to match students who are
       interested in CS with upperclassmen mentors. WiCS will sponsor an activity between
@@ -18,7 +18,7 @@ const WicsResources = () => (
       FRIENDSHIP, AND ADVICE on your own schedule!
     </Description>
 
-    <Subheading>Leadership Opportunities</Subheading>
+    <Subheading name="leadership_opportunities">Leadership Opportunities</Subheading>
     <Description>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
       labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco lab

@@ -8,7 +8,7 @@ const CodeResources = () => (
       color: '#e36154', backgroundColor: '#e36154', height: 2, borderColor: '#e36154', width: '600px',
     }}
     />
-    <Subheading>For Beginners</Subheading>
+    <Subheading name="for_beginners">For Beginners</Subheading>
     <Description>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
       labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco lab
@@ -17,7 +17,7 @@ const CodeResources = () => (
       sunt in culpa qui officia deserunt mollit anim id est laborum.
     </Description>
 
-    <Subheading>For Practice</Subheading>
+    <Subheading name="practice">Practice</Subheading>
     <Description>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
       labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco lab
@@ -26,7 +26,7 @@ const CodeResources = () => (
       sunt in culpa qui officia deserunt mollit anim id est laborum.
     </Description>
 
-    <Subheading>Interview Prep</Subheading>
+    <Subheading name="interview_prep">Interview Prep</Subheading>
     <Description>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
       labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco lab
