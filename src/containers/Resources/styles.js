@@ -68,7 +68,7 @@ export const Subheading = styled.div`
     color: #e36154;
 `
 export const Description = styled.div`
-    display: flex;
+    ${''}
     font-family: 'Roboto', sans-serif;
     font-weight: 'medium';
     letter-spacing:2px;
@@ -93,5 +93,4 @@ export const Button = styled.div`
     margin-left: 5vw;
     margin-right: 5vw;
     margin-top: 2vh;
-
 `

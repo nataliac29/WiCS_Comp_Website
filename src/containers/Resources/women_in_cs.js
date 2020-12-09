@@ -1,31 +1,58 @@
 import React from 'react'
-import { Subtitle, Subheading, Description } from './styles'
+import { Subtitle, Subheading, Description, } from './styles'
+import GirlsWhoCode from './girlswhocode.png'
+import WECode from './wecode.png'
 
 const WomenCS = () => (
   <div>
     <Subtitle>Women in CS</Subtitle>
     <hr style={{
-      color: '#e36154', backgroundColor: '#e36154', height: 2, borderColor: '#e36154', width: '600px',
+      color: '#e36154', backgroundColor: '#e36154', height: 2, borderColor: '#e36154', width: '650px',
     }}
     />
-    <Subheading name="women_spotlight">Women in CS Spotlight</Subheading>
-    <Description>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco lab
-      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proi
-      sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <Subheading>Girls Who Code</Subheading>
+    <Description class="flex flex-row" style={{ display: 'flex' }}>
+      <div>
+        Harvard WiCS supports women interested in STEM
+        through
+        {' '}
+        <a href="https://www.harvardwics.com/girls-who-code">Girls Who Code</a>
+        , an organization
+        aimed at closing the gender gap in technology by creating programs that educate, equip,
+        and inspire young girls with computing skills they&apos;ll need in the 21st century.
+        We offer a Summer Immersion Program, as well as a Girls Who Code club.
+      </div>
+      <div>
+        <img
+          alt="girls who code"
+          src={GirlsWhoCode}
+          style={{
+            width: '30vw', height: 'undefined', aspectRatio: '3', marginLeft: '5vw', marginTop: '4vh',
+          }}
+        />
+      </div>
     </Description>
-
-    <Subheading name="women_facts">Facts & Figures About Women in STEM</Subheading>
-    <Description>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco lab
-      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proi
-      sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <Subheading>WECode Conference</Subheading>
+    <Description class="flex flex-row" style={{ display: 'flex' }}>
+      <div>
+        The
+        {' '}
+        <a href="https://www.harvardwecode.com/">WECode</a>
+        {' '}
+        (Women Engineers Code) Conference is an annual conference hosted by undergraduate
+        women at Harvard. WECode&apos;s mission is to cultivate a supportive network of collegiate
+        engineers and promote more female representation in the tech industry.
+      </div>
+      <div>
+        <img
+          alt="WECode"
+          src={WECode}
+          style={{
+            width: '30vw', height: 'undefined', aspectRatio: '3', marginLeft: '5vw', marginTop: '4vh',
+          }}
+        />
+      </div>
     </Description>
-
   </div>
 )
 
