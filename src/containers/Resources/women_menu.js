@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import {
   Collapse, Button, CardBody, Card,
 } from 'reactstrap'
+import { Link } from 'react-scroll'
 import { MenuContainer } from './styles'
 import 'bootstrap/dist/css/bootstrap.css'
 
@@ -17,7 +18,16 @@ const WomenResourcesMenu = () => {
         <Collapse isOpen={isOpen}>
           <Card>
             <CardBody>
-              List women in CS resources and their links here!
+              <div>
+                <Link to="women_spotlight" smooth class="Subheading" style={{ color: '#e36154' }}>
+                  Spotlight
+                </Link>
+              </div>
+              <div>
+                <Link to="women_facts" smooth class="Subheading" style={{ color: '#e36154' }}>
+                  Facts & Figures
+                </Link>
+              </div>
             </CardBody>
           </Card>
         </Collapse>

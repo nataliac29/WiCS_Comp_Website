@@ -8,7 +8,7 @@ const CareerResources = () => (
       color: '#e36154', backgroundColor: '#e36154', height: 2, borderColor: '#e36154', width: '600px',
     }}
     />
-    <Subheading>Resume Drops</Subheading>
+    <Subheading name="resume_drops">Resume Drops</Subheading>
     <Description>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
       labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -17,7 +17,7 @@ const CareerResources = () => (
       sunt in culpa qui officia deserunt mollit anim id est laborum.
     </Description>
 
-    <Subheading>Networking</Subheading>
+    <Subheading name="networking">Networking</Subheading>
     <Description>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
       labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -26,7 +26,7 @@ const CareerResources = () => (
       sunt in culpa qui officia deserunt mollit anim id est laborum.
     </Description>
 
-    <Subheading>Job Openings</Subheading>
+    <Subheading name="job_openings">Job Openings</Subheading>
     <Description>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
       labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco

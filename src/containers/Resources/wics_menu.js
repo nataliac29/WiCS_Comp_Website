@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import {
   Collapse, Button, CardBody, Card,
 } from 'reactstrap'
+import { Link } from 'react-scroll'
 import { MenuContainer } from './styles'
 
 const WicsResourcesMenu = () => {
@@ -12,19 +13,20 @@ const WicsResourcesMenu = () => {
   return (
     <div>
       <MenuContainer>
-        <Button color="primary" onClick={toggle} style={{ marginBottom: '1rem' }}>WiCS Resources!!</Button>
+        <Button color="primary" onClick={toggle} style={{ marginBottom: '1rem' }}>WiCS Resources!</Button>
         <Collapse isOpen={isOpen}>
           <Card>
             <CardBody>
-              <p>
-                Mentorships
-              </p>
-              <p>
-                Group Outings
-              </p>
-              <p>
-                Leadership Opportunities
-              </p>
+              <div>
+                <Link to="mentorships" smooth class="Subheading" style={{ color: '#e36154' }}>
+                  Mentorships
+                </Link>
+              </div>
+              <div>
+                <Link to="leadership_opportunities" smooth class="Subheading" style={{ color: '#e36154' }}>
+                  Leadership Opportunities
+                </Link>
+              </div>
             </CardBody>
           </Card>
         </Collapse>

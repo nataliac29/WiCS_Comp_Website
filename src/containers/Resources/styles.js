@@ -1,29 +1,38 @@
 import styled from 'styled-components'
 
+export const DropdownButtons = styled.div`
+    display: flex;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2vh;
 
+`
 export const MenuContainer = styled.div`
-    height: 15vh;
-    display: inline;
+    display: flex;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     letter-spacing:2px;
     line-height: 1em;
     padding-left: 5vw;
     padding-right: 5vw;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     margin-top: 2vh;
 
 `
 export const ButtonContainer = styled.div`
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
+    display: flex;
+    justify-content: center;
     letter-spacing:2px;
     line-height: 1em;
+    flex-direction: row;
     padding-left: 5vw;
     padding-right: 5vw;
-    justify-content: center;
     margin-top: 5vh;
-    colour
 `
 export const Welcome = styled.div`
     display: flex;
@@ -34,6 +43,7 @@ export const Welcome = styled.div`
     margin-left: 5vw;
     margin-top: 8vh;
     font-size: 3em;
+    color: #e36154;
 `
 export const Subtitle = styled.div`
     display: flex;
@@ -42,7 +52,7 @@ export const Subtitle = styled.div`
     letter-spacing:2px;
     line-height: 1em;
     margin-left: 5vw;
-    margin-top: 8vh;
+    margin-top: 4vh;
     font-size: 3em;
     color: grey;
 `
@@ -69,4 +79,12 @@ export const Description = styled.div`
     font-size: 1em;
     color: grey;
 
+`
+export const LinkContainer = styled.div`
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 'medium';
+    letter-spacing:2px;
+    line-height: 2em;
+    font-size: 3em;
 `
