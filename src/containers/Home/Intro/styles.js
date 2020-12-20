@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 
+
 export const Welcome = styled.div`
     display: flex;
     font-family: 'Roboto', sans-serif;
@@ -9,6 +10,7 @@ export const Welcome = styled.div`
     margin-left: 5vw;
     margin-top: 8vh;
     font-size: 3em;
+    color: #e36154;
 `
 export const Paragraph = styled.div`
     display: flex;
@@ -23,8 +25,7 @@ export const Paragraph = styled.div`
 `
 export const Intro = styled.div`
     display: flex;
-    margin-top: 10vh;
-    
+    margin-top: 10vh;    
 `
 export const Arrow = styled.img`
     position: sticky;

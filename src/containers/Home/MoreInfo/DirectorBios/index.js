@@ -16,10 +16,10 @@ const DBios = () => (
             alt="diverse women together"
             src={Jacinta}
             style={{
-              width: '20vw', height: 'undefined', aspectRatio: '3',
+              width: '20vw', height: 'undefined', aspectRatio: '3', alignSelf: 'center',
             }}
           />
-          <p style={{ paddingLeft: '1vw' }}>Short bio for Jacinta and email address</p>
+          <p>Short bio for Jacinta and email address</p>
         </Bio>
       </Cards>
       <Cards>
@@ -29,10 +29,10 @@ const DBios = () => (
             alt="diverse women together"
             src={Vicki}
             style={{
-              width: '20vw', height: 'undefined', aspectRatio: '3',
+              width: '20vw', height: 'undefined', aspectRatio: '3', alignSelf: 'center',
             }}
           />
-          <p style={{ paddingLeft: '1vw' }}>Short bio for Vicki and email address</p>
+          <p>Short bio for Vicki and email address</p>
         </Bio>
       </Cards>
     </Directors>
