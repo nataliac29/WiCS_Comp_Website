@@ -64,7 +64,7 @@ export const Subheading = styled.div`
     line-height: 1em;
     margin-left: 5vw;
     margin-top: 4vh;
-    font-size: 3em;
+    font-size: 2.5em;
     color: #e36154;
 `
 export const Description = styled.div`
@@ -76,7 +76,7 @@ export const Description = styled.div`
     margin-left: 5vw;
     margin-right: 5vw;
     margin-top: 2vh;
-    font-size: 1em;
+    font-size: 1.5em;
     color: grey;
 
 `
@@ -87,4 +87,20 @@ export const LinkContainer = styled.div`
     letter-spacing:2px;
     line-height: 2em;
     font-size: 3em;
+`
+export const Button = styled.div`
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-right: 5vw;
+    margin-top: 2vh;
+}
+
 `
