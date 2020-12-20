@@ -62,5 +62,4 @@ const WicsResources = () => (
 
   </div>
 )
-
 export default WicsResources
