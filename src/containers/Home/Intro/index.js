@@ -5,12 +5,13 @@ import {
 } from './styles'
 import Women from './women.jpg'
 import DownArrow from './arrowdown.png'
+import './background.css'
 
 const Body = () => (
   <div>
     <Intro>
       <div>
-        <Welcome> Welcome to WiCS&apos;s Comp Tracker</Welcome>
+        <Welcome> WiCS Comp Tracker</Welcome>
         <Paragraph>
           We are so excited you are comping WiCS! You can use this website to
           keep track of your progress towards becoming a member.

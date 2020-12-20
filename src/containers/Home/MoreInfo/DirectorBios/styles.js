@@ -14,6 +14,8 @@ export const Directors = styled.div`
 export const Cards = styled.div`
     display: flex;
     flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
     width: 35vw;
 `
 export const Intro = styled.div`
@@ -24,12 +26,14 @@ export const Intro = styled.div`
     font-size: 1.5em;
     text-align: center;
     margin-top: 5vh;
+    color: #e36154;
 `
 export const Bio = styled.div`
     margin-top: 1vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-items: space-between;
     font-size:0.75em;
     font-weight: 200;
+    text-align: center;
 `
