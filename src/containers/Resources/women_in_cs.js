@@ -1,5 +1,5 @@
 import React from 'react'
-import { Subtitle, Subheading, Description, } from './styles'
+import { Subtitle, Subheading, Description } from './styles'
 import GirlsWhoCode from './girlswhocode.png'
 import WECode from './wecode.png'
 
