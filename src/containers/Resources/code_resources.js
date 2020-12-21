@@ -8,32 +8,71 @@ const CodeResources = () => (
       color: '#e36154', backgroundColor: '#e36154', height: 2, borderColor: '#e36154', width: '600px',
     }}
     />
-    <Subheading name="for_beginners">For Beginners</Subheading>
+    <Subheading name="practice">Coding Practice</Subheading>
     <Description>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco lab
-      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proi
-      sunt in culpa qui officia deserunt mollit anim id est laborum.
+      If you know of any online learning resources, feel free to add them to
+      {' '}
+      <a
+        href="https://docs.google.com/spreadsheets/d/10IQWNZqgqQutqO3yZu5IVe9YYVr12foB7A_x_iu5lh0/edit?usp=sharing"
+      >
+        this document
+      </a>
+      . This is a live document where members can add sites that could be useful to others! Helpful
+      sites
+      {' '}
+      <a href="https://www.codecademy.com/"> Codecademy</a>
+      ,
+      {' '}
+      <a href="https://www.khanacademy.org/computing/computer-programming">Khan Academy</a>
+      , and
+      {' '}
+      <a href="https://reactjs.org/tutorial/tutorial.html"> React</a>
+      .
     </Description>
 
-    <Subheading name="practice">Practice</Subheading>
+    <Button>
+      <a
+        style={{
+          color: 'white',
+          textDecoration: 'none',
+          fontSize: '1.5em',
+          marginBottom: '5vh',
+        }}
+        target="wics mentorship"
+        href="https://docs.google.com/spreadsheets/d/1k0U2-VWoXeoWypOv5-AQYoWf3C7P5wDbNjcd9T44oYU/edit?usp=sharing"
+      >
+        Referrals
+      </a>
+    </Button>
+
+    <Subheading name="interview_prep">Technical Interview Prep</Subheading>
     <Description>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco lab
-      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proi
-      sunt in culpa qui officia deserunt mollit anim id est laborum.
+      WiCS&apos;s 2019 Technical Recruiting Guide has great resources for those who are looking
+      to prep for upcoming technical interviews.
+      {' '}
+      <a href="leetcode.com">Leetcode</a>
+      ,
+      {' '}
+      <a href="hackerrank.com">Hackerrank</a>
+      ,
+      and &quot;Cracking the Coding Interview&quot; by Gayle Laakman McDowell are also great
+      resources for practice and review of CS concepts.
     </Description>
 
-    <Subheading name="interview_prep">Interview Prep</Subheading>
-    <Description>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco lab
-      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proi
-      sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </Description>
+    <Button>
+      <a
+        style={{
+          color: 'white',
+          textDecoration: 'none',
+          fontSize: '1.5em',
+          marginBotton: '5vh',
+        }}
+        target="wics mentorship"
+        href="https://drive.google.com/drive/folders/1ZMXvgv3YYduuUpwU9CdYqvuP6dfyyAuv?usp=sharing"
+      >
+        Career: Software Engineering and PM Folder
+      </a>
+    </Button>
   </div>
 )
 export default CodeResources
