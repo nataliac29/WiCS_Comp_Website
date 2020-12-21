@@ -1,5 +1,7 @@
 import React from 'react'
-import { Subtitle, Subheading, Description } from './styles'
+import {
+  Subtitle, Subheading, Description, Button,
+} from './styles'
 
 const CodeResources = () => (
   <div>
