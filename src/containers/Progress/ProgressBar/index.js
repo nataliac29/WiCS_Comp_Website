@@ -124,8 +124,7 @@ const PBar = ({ data3 }) => {
           hoverable
         />
       </div>
-      <br>
-      </br>
+      <br />
 
     </div>
 
