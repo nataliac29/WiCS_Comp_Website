@@ -9,6 +9,7 @@ query userTrackEvents {
             photo
             des
             addedAt
+            approved
         }
     }
 `

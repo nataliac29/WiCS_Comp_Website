@@ -56,7 +56,7 @@ const Row = ({ data, data3 }) => {
         <TableCell align="left">{data.des}</TableCell>
       </TableRow>
       <TableRow>
-        <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={4}>
+        <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={5}>
           <Collapse in={open} timeout="auto" unmountOnExit>
             <Box margin={1}>
               <Typography variant="h6" gutterBottom component="div">
@@ -69,6 +69,7 @@ const Row = ({ data, data3 }) => {
                     <TableCell>Submitted Description</TableCell>
                     <TableCell align="left">Submitted Photo</TableCell>
                     <TableCell align="left">Submitted At </TableCell>
+                    <TableCell align="left">Approval</TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
@@ -80,6 +81,7 @@ const Row = ({ data, data3 }) => {
                       </TableCell>
                       <TableCell align="left">{ci.photo}</TableCell>
                       <TableCell align="left">{ci.addedAt}</TableCell>
+                      <TableCell align="left">{ci.approved ? 'Approved' : 'Not Approved'}</TableCell>
                     </TableRow>
                   ))}
                 </TableBody>

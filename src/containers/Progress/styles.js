@@ -22,4 +22,5 @@ export const Container = styled.div`
     margin: 0px 5% 5vh 5%;
     flex-direction: column;
     padding-top: 2vh;
+    background-color: white;
 `

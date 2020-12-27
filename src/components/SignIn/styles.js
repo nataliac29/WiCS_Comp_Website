@@ -4,8 +4,10 @@ export const LoginContainer = styled.div`
     display: flex;
     flex: 1;
     justify-content: center;
+    height: 100%;
 `
 export const InnerLogin = styled.div`
+    background-color: white;
     display: flex; 
     flex-direction: column;
     align-items: stretch;
@@ -14,14 +16,20 @@ export const InnerLogin = styled.div`
     padding: 50px; 
     border-radius: 5px; 
     height: 100%;
-    @media (max-width: 1000px) {
+    @media (min-width: 600px) and (max-width: 1000px) {
       margin: 0rem;
+    }
+    @media (max-width: 600px) {
+      margin: 0rem;
+      width: 85vw;
+      padding: 30px;
     }
 `
 export const Container = styled.div`
-    min-height: 100%;
-    margin-top: 10%;
+    margin-top: 10vh;
+    margin-bottom: 10%;
     display: flex;
+    flex-direction: row;
     color: #c93826;
     font-family: 'Roboto', sans-serif;
     font-weight: 'medium';
@@ -32,6 +40,7 @@ export const Container = styled.div`
         width: 100vw;
         align-items: stretch;
     }
+
 `
 
 export const PictureContainer = styled.div`   

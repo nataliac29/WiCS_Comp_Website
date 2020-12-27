@@ -16,8 +16,9 @@ const PublicRoute = ({ children, error, ...rest }) => {
         </>
       ) : (
         <>
-          <AuthenticatedNavbar />
-          {children}
+          <AuthenticatedNavbar>
+            {children}
+          </AuthenticatedNavbar>
         </>
       ))}
     />
