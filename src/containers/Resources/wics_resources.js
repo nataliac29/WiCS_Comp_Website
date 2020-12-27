@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-  Subtitle, Subheading, Description, Button,
+  Subtitle, Subheading, Description, Button2,
 } from './styles'
 import Mentorship from './csmentorship.png'
 
@@ -12,7 +12,7 @@ const WicsResources = () => (
     }}
     />
     <Subheading name="mentorships">Mentorship</Subheading>
-    <Description class="flex flex-row">
+    <Description class="flex flex-row" style={{ display: 'flex' }}>
       <div>
         Each year, WiCS organizes a mentorship program designed to match students who are
         interested in CS with upperclassmen mentors. WiCS will sponsor an activity between
@@ -24,20 +24,20 @@ const WicsResources = () => (
         This mentorship program is one of the largest on campus--over 200 women in tech participate
         and have said that WiCS mentorship has been an incredibly beneficial experience.
         <br />
-        <Button>
+        <Button2>
           <a
             style={{
               color: 'white',
               textDecoration: 'none',
               fontSize: '1.5em',
+              marginBottom: '5vh',
             }}
             target="wics mentorship"
             href="https://www.harvardwics.com/mentorships"
           >
             Read More and Sign Up
           </a>
-        </Button>
-
+        </Button2>
       </div>
       <div>
         <img
