@@ -90,7 +90,24 @@ export const Button = styled.div`
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    margin-left: 5vw;
     margin-right: 5vw;
     margin-top: 2vh;
+    margin-left: 5vw;
+
+`
+
+export const Button2 = styled.div`
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-right: 5vw;
+    margin-top: 2vh;
+
 `
