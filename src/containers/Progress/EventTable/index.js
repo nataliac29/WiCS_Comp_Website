@@ -56,7 +56,7 @@ const Row = ({ data, data3 }) => {
         <TableCell align="left">{data.des}</TableCell>
       </TableRow>
       <TableRow>
-        <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={4}>
+        <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={5}>
           <Collapse in={open} timeout="auto" unmountOnExit>
             <Box margin={1}>
               <Typography variant="h6" gutterBottom component="div">
@@ -72,15 +72,19 @@ const Row = ({ data, data3 }) => {
                 </TableHead>
                 <TableBody>
                   {
-                    (data3.filter(eid => eid.eventId === data.id)).map(historyRow => (
-                      <TableRow key={historyRow.id}>
-                        <TableCell component="th" scope="row">
-                          {historyRow.des}
-                        </TableCell>
-                        <TableCell>{historyRow.photo}</TableCell>
-                        <TableCell align="right">{historyRow.addedAt}</TableCell>
-                      </TableRow>
-                    ))
+                    (data3.filter(eid => eid.eventId === data.id)).map(historyRow => {
+                      const d = new Date(historyRow.addedAt)
+                      const newDate = Intl.DateTimeFormat('en', { year: 'numeric' }).format(d)
+                      return (
+                        <TableRow key={historyRow.id}>
+                          <TableCell component="th" scope="row">
+                            {historyRow.des}
+                          </TableCell>
+                          <TableCell>{historyRow.photo}</TableCell>
+                          <TableCell align="right">{newDate}</TableCell>
+                        </TableRow>
+                      )
+                    })
                   /* {(data3.filter(eid => eid.eventId === data.id)).map(ci => (
                     <TableRow key={ci.id}>
                       <TableCell />
