@@ -12,8 +12,10 @@ const WicsResourcesMenu = () => {
 
   return (
     <div>
-      <MenuContainer>
-        <Button color="primary" onClick={toggle} style={{ marginBottom: '1rem' }}>WiCS Resources!</Button>
+      <MenuContainer className="menu-btn">
+        <Button className="button" onClick={toggle}>
+          <div className="text-btn">WiCS</div>
+        </Button>
         <Collapse isOpen={isOpen}>
           <Card>
             <CardBody>

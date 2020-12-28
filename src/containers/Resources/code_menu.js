@@ -13,8 +13,10 @@ const CodeResourcesMenu = () => {
 
   return (
     <div>
-      <MenuContainer>
-        <Button color="primary" onClick={toggle} style={{ marginBottom: '1rem' }}>Coding Resources!</Button>
+      <MenuContainer className="menu-btn">
+        <Button className="button" onClick={toggle}>
+          <div className="text-btn">Coding</div>
+        </Button>
         <Collapse isOpen={isOpen}>
           <Card>
             <CardBody>

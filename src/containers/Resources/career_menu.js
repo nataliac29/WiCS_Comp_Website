@@ -13,8 +13,10 @@ const CareerResourcesMenu = () => {
 
   return (
     <div>
-      <MenuContainer>
-        <Button color="primary" onClick={toggle} style={{ marginBottom: '1rem' }}>Career Resources!</Button>
+      <MenuContainer className="menu-btn">
+        <Button className="button" onClick={toggle}>
+          <div className="text-btn">Careers</div>
+        </Button>
         <Collapse isOpen={isOpen}>
           <Card>
             <CardBody>

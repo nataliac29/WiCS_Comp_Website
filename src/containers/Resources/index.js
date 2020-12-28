@@ -12,7 +12,7 @@ import { DropdownButtons, Welcome } from './styles'
 const Resources = () => (
   <>
     <Welcome>Resources</Welcome>
-    <DropdownButtons>
+    <DropdownButtons className="dropdown-btn">
       <WicsResourcesMenu />
       <CareerResourcesMenu />
       <CodeResourcesMenu />
