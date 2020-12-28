@@ -2,7 +2,6 @@ import React from 'react'
 import { ThemeProvider } from '@material-ui/styles'
 import { createMuiTheme } from '@material-ui/core'
 import { useQuery } from '@apollo/react-hooks'
-import { ThemeProvider } from '@material-ui/styles'
 import { GET_NAME_PROFILE } from './queries'
 import { Welcome } from '../styles'
 

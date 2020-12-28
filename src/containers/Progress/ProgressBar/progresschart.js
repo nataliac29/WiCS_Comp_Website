@@ -26,7 +26,6 @@ const theme = createMuiTheme({
       'sans-serif',
     ].join(','),
     fontWeight: 600,
-    letterSpacing: '2px',
     lineHeight: '1em',
   },
 })
@@ -45,9 +44,9 @@ const Row = ({ data }) => {
   return (
     <>
       <TableRow className={classes.root}>
-        <TableCell>{data.category}</TableCell>
-        <TableCell align="center">{(data.status === 'true') ? <Emoji symbol="✅" label="complete" /> : <Emoji symbol="❌" label="incomplete" />}</TableCell>
-        <TableCell align="center">{data.complete}</TableCell>
+        <TableCell letterSpacing='-8px'>{data.category}</TableCell>
+        <TableCell align="center" >{(data.status === 'true') ? <Emoji symbol="✅" label="complete" /> : <Emoji symbol="❌" label="incomplete" />}</TableCell>
+        <TableCell align="center" >{data.complete}</TableCell>
         <TableCell align="center">{data.required}</TableCell>
       </TableRow>
     </>
@@ -69,9 +68,9 @@ const ProgressChart = ({ data1 }) => (
             <TableHead>
               <TableRow>
                 <TableCell>Category</TableCell>
-                <TableCell align="center">Status</TableCell>
+                <TableCell align="center" >Status</TableCell>
                 <TableCell align="center">Completed</TableCell>
-                <TableCell align="center">Required</TableCell>
+                <TableCell align="center" >Required</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>

@@ -40,6 +40,12 @@ const useRowStyles = makeStyles({
 const Row = ({ data, data3 }) => {
   const [open, setOpen] = React.useState(false)
   const classes = useRowStyles()
+  const date = new Date(data.datetime)
+  var options = {
+    timeZone: 'America/New_York', year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric',
+    hour12: true
+  };
+  const largeDate = Intl.DateTimeFormat('en', options).format(date)
   return (
     <>
       <TableRow className={classes.root}>
@@ -52,7 +58,7 @@ const Row = ({ data, data3 }) => {
           {data.eventname}
         </TableCell>
         <TableCell align="left">{data.type}</TableCell>
-        <TableCell align="left">{data.datetime}</TableCell>
+        <TableCell align="left">{largeDate}</TableCell>
         <TableCell align="left">{data.des}</TableCell>
       </TableRow>
       <TableRow>
@@ -74,7 +80,11 @@ const Row = ({ data, data3 }) => {
                   {
                     (data3.filter(eid => eid.eventId === data.id)).map(historyRow => {
                       const d = new Date(historyRow.addedAt)
-                      const newDate = Intl.DateTimeFormat('en', { year: 'numeric' }).format(d)
+                      var options = {
+                        timeZone: 'America/New_York', year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric',
+                        hour12: true
+                      };
+                      const newDate = Intl.DateTimeFormat('en', options).format(d)
                       return (
                         <TableRow key={historyRow.id}>
                           <TableCell component="th" scope="row">
@@ -85,16 +95,7 @@ const Row = ({ data, data3 }) => {
                         </TableRow>
                       )
                     })
-                  /* {(data3.filter(eid => eid.eventId === data.id)).map(ci => (
-                    <TableRow key={ci.id}>
-                      <TableCell />
-                      <TableCell component="th" scope="row">
-                        {ci.des}
-                      </TableCell>
-                      <TableCell align="left">{ci.photo}</TableCell>
-                      <TableCell align="left">{ci.addedAt}</TableCell>
-                    </TableRow>
-                  ))} */}
+                  }
                 </TableBody>
               </Table>
             </Box>
