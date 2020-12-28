@@ -19,13 +19,13 @@ const WomenResourcesMenu = () => {
           <Card>
             <CardBody>
               <div>
-                <Link to="women_spotlight" smooth class="Subheading" style={{ color: '#e36154' }}>
-                  Spotlight
+                <Link to="girls_who_code" smooth class="Subheading" style={{ color: '#e36154' }}>
+                  Girls Who Code
                 </Link>
               </div>
               <div>
-                <Link to="women_facts" smooth class="Subheading" style={{ color: '#e36154' }}>
-                  Facts & Figures
+                <Link to="WECode" smooth class="Subheading" style={{ color: '#e36154' }}>
+                  WECode
                 </Link>
               </div>
             </CardBody>

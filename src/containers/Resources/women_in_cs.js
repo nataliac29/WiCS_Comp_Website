@@ -10,7 +10,7 @@ const WomenCS = () => (
       color: '#e36154', backgroundColor: '#e36154', height: 2, borderColor: '#e36154', width: '650px',
     }}
     />
-    <Subheading>Girls Who Code</Subheading>
+    <Subheading name="girls_who_code">Girls Who Code</Subheading>
     <Description class="flex flex-row" style={{ display: 'flex' }}>
       <div>
         Harvard WiCS supports women interested in STEM
@@ -32,7 +32,7 @@ const WomenCS = () => (
         />
       </div>
     </Description>
-    <Subheading>WECode Conference</Subheading>
+    <Subheading name="WECode">WECode Conference</Subheading>
     <Description class="flex flex-row" style={{ display: 'flex' }}>
       <div>
         The

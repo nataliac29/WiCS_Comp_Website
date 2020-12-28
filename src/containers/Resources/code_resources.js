@@ -10,7 +10,7 @@ const CodeResources = () => (
       color: '#e36154', backgroundColor: '#e36154', height: 2, borderColor: '#e36154', width: '600px',
     }}
     />
-    <Subheading name="practice">Coding Practice</Subheading>
+    <Subheading name="coding_practice">Coding Practice</Subheading>
     <Description>
       If you know of any online learning resources, feel free to add them to
       {' '}

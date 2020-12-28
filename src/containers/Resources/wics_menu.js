@@ -22,11 +22,6 @@ const WicsResourcesMenu = () => {
                   Mentorships
                 </Link>
               </div>
-              <div>
-                <Link to="leadership_opportunities" smooth class="Subheading" style={{ color: '#e36154' }}>
-                  Leadership Opportunities
-                </Link>
-              </div>
             </CardBody>
           </Card>
         </Collapse>
