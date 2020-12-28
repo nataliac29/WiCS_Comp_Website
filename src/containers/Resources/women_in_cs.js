@@ -4,7 +4,7 @@ import GirlsWhoCode from './girlswhocode.png'
 import WECode from './wecode.png'
 
 const WomenCS = () => (
-  <div>
+  <div style={{ paddingBottom: '10vh' }}>
     <Subtitle>Women in CS</Subtitle>
     <hr style={{
       color: '#e36154', backgroundColor: '#e36154', height: 2, borderColor: '#e36154', width: '650px',

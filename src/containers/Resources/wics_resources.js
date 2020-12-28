@@ -1,8 +1,10 @@
 import React from 'react'
 import {
-  Subtitle, Subheading, Description, Button2,
+  Subtitle, Subheading, Description,
 } from './styles'
 import Mentorship from './csmentorship.png'
+import 'bootstrap/dist/css/bootstrap.css'
+import './resources_buttons.css'
 
 const WicsResources = () => (
   <div>
@@ -24,20 +26,9 @@ const WicsResources = () => (
         This mentorship program is one of the largest on campus--over 200 women in tech participate
         and have said that WiCS mentorship has been an incredibly beneficial experience.
         <br />
-        <Button2>
-          <a
-            style={{
-              color: 'white',
-              textDecoration: 'none',
-              fontSize: '1.5em',
-              marginBottom: '5vh',
-            }}
-            target="wics mentorship"
-            href="https://www.harvardwics.com/mentorships"
-          >
-            Read More and Sign Up
-          </a>
-        </Button2>
+        <a href="https://www.harvardwics.com/mentorships" className="resources_button">
+          Read More and Sign Up
+        </a>
       </div>
       <div>
         <img
