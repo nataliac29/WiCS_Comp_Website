@@ -114,8 +114,7 @@ const EventTable = ({ data1, data3 }) => (
       >
         Events you&apos;ve attended:
       </Welcome>
-      <br>
-      </br>
+      <br />
       <div style={{ display: 'flex' }}>
         <div style={{ width: '30%' }} />
         <TableContainer component={Paper}>
@@ -142,8 +141,7 @@ const EventTable = ({ data1, data3 }) => (
 
 
     </ThemeProvider>
-    <br>
-    </br>
+    <br />
   </div>
 )
 

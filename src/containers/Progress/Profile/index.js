@@ -1,9 +1,10 @@
 import React from 'react'
+import { ThemeProvider } from '@material-ui/styles'
+import { createMuiTheme } from '@material-ui/core'
 import { useQuery } from '@apollo/react-hooks'
 import { GET_NAME_PROFILE } from './queries'
 import { Welcome } from '../styles'
-import { ThemeProvider } from '@material-ui/styles'
-import { createMuiTheme } from '@material-ui/core'
+
 
 const theme = createMuiTheme({
   typography: {
@@ -34,8 +35,8 @@ const Profile = () => {
       <div>
         <Welcome style={{ fontSize: '3em', marginTop: '5vh', marginLeft: '5vw' }}>
           {`${data.viewer.firstName} ${data.viewer.lastName}`}
-        &apos;s Progress
-      </Welcome>
+          &apos;s Progress
+        </Welcome>
         <Welcome style={{
           fontSize: '1em', marginTop: '1vh', fontWeight: 'light', marginBottom: '5vh', marginLeft: '5vw',
         }}
