@@ -1,7 +1,9 @@
 import React from 'react'
 import {
-  Subtitle, Subheading, Description, Button,
+  Subtitle, Subheading, Description,
 } from './styles'
+import 'bootstrap/dist/css/bootstrap.css'
+import './resources_buttons.css'
 
 const CodeResources = () => (
   <div>
@@ -32,21 +34,6 @@ const CodeResources = () => (
       .
     </Description>
 
-    <Button>
-      <a
-        style={{
-          color: 'white',
-          textDecoration: 'none',
-          fontSize: '1.5em',
-          marginBottom: '5vh',
-        }}
-        target="wics mentorship"
-        href="https://docs.google.com/spreadsheets/d/1k0U2-VWoXeoWypOv5-AQYoWf3C7P5wDbNjcd9T44oYU/edit?usp=sharing"
-      >
-        Referrals
-      </a>
-    </Button>
-
     <Subheading name="interview_prep">Technical Interview Prep</Subheading>
     <Description>
       WiCS&apos;s 2019 Technical Recruiting Guide has great resources for those who are looking
@@ -59,22 +46,15 @@ const CodeResources = () => (
       ,
       and &quot;Cracking the Coding Interview&quot; by Gayle Laakman McDowell are also great
       resources for practice and review of CS concepts.
+      <br />
+      <a
+        href="https://docs.google.com/document/d/16HVtQ0bYrUdthIorEOS47w71rKh9WEGaa6wsj3OJr8o/edit?usp=sharing"
+        className="resources_button"
+      >
+        2019 Technical Recruiting Guide
+      </a>
     </Description>
 
-    <Button>
-      <a
-        style={{
-          color: 'white',
-          textDecoration: 'none',
-          fontSize: '1.5em',
-          marginBotton: '5vh',
-        }}
-        target="wics mentorship"
-        href="https://drive.google.com/drive/folders/1ZMXvgv3YYduuUpwU9CdYqvuP6dfyyAuv?usp=sharing"
-      >
-        Career: Software Engineering and PM Folder
-      </a>
-    </Button>
   </div>
 )
 export default CodeResources

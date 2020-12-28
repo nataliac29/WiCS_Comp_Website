@@ -22,7 +22,6 @@ const Resources = () => (
     <CareerResources />
     <CodeResources />
     <WomenCS />
-
   </>
 )
 
