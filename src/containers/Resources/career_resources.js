@@ -10,7 +10,7 @@ const CareerResources = () => (
       color: '#e36154', backgroundColor: '#e36154', height: 2, borderColor: '#e36154', width: '650px',
     }}
     />
-    <Subheading>Career Paths</Subheading>
+    <Subheading name="career_paths">Career Paths</Subheading>
     <Description>
       There are a variety of paths that many people take after (or during) college, including
       pursuing grad school,traveling, taking time off, creating startups, academic research,
@@ -33,7 +33,7 @@ const CareerResources = () => (
       </a>
     </Button>
 
-    <Subheading>Referrals</Subheading>
+    <Subheading name="referrals">Referrals</Subheading>
     <Description>
       A few WiCS members have volunteered to give referrals or pass along information about
       previous places they have worked at. They have included the materials they need from
@@ -55,7 +55,7 @@ const CareerResources = () => (
       </a>
     </Button>
 
-    <Subheading>Internships Opportunities</Subheading>
+    <Subheading name="internship_opportunities">Internships Opportunities</Subheading>
     <Description>
       Are you a freshman or sophomore looking for an internship? WiCS has compiled a list of
       companies with programs aimed towards first and second year students. We have also uploaded

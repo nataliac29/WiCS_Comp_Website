@@ -19,13 +19,8 @@ const CodeResourcesMenu = () => {
           <Card>
             <CardBody>
               <div>
-                <Link to="for_beginners" smooth class="Subheading" style={{ color: '#e36154' }}>
-                  For Beginners
-                </Link>
-              </div>
-              <div>
-                <Link to="practice" smooth class="Subheading" style={{ color: '#e36154' }}>
-                  Practice
+                <Link to="coding_practice" smooth class="Subheading" style={{ color: '#e36154' }}>
+                  Coding Practice
                 </Link>
               </div>
               <div>

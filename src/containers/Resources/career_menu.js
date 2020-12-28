@@ -19,18 +19,18 @@ const CareerResourcesMenu = () => {
           <Card>
             <CardBody>
               <div>
-                <Link to="resume_drops" smooth class="Subheading" style={{ color: '#e36154' }}>
-                  Resume Drops
+                <Link to="career_paths" smooth class="Subheading" style={{ color: '#e36154' }}>
+                  Career Paths
                 </Link>
               </div>
               <div>
-                <Link to="networking" smooth class="Subheading" style={{ color: '#e36154' }}>
-                  Networking
+                <Link to="referrals" smooth class="Subheading" style={{ color: '#e36154' }}>
+                  Referrals
                 </Link>
               </div>
               <div>
-                <Link to="job_openings" smooth class="Subheading" style={{ color: '#e36154' }}>
-                  Job Openings
+                <Link to="internship_opportunities" smooth class="Subheading" style={{ color: '#e36154' }}>
+                  Internship Opportunities
                 </Link>
               </div>
             </CardBody>
