@@ -18,7 +18,7 @@ const CodeResourcesMenu = () => {
           <div className="text-btn">Coding</div>
         </Button>
         <Collapse isOpen={isOpen}>
-          <Card>
+          <Card style={{ marginTop: '1.2vh' }}>
             <CardBody>
               <div>
                 <Link to="coding_practice" smooth class="Subheading" style={{ color: '#e36154' }}>

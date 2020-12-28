@@ -57,25 +57,40 @@
     }
 
     .welcome {
-
-        margin-top: 2vh;
-        font-size: 3vw;
-
+        margin-top: 0vh;
+        font-size: 10vw;
     }
 
     .subtitle {
-
+        font-size: 8vw;
     }
 
     .subheading {
-
+        margin-top: 2vh;
+        font-size: 7.5vw;
     }
 
     .description {
-
+        font-size: 4vw;
     }
   }
 
 @media only screen and (min-width:321px) and (max-width:768px) {
+    .welcome {
+        margin-top: 1vh;
+        font-size: 6vw;
+    }
 
+    .subtitle {
+        margin-top: 4vh;
+        font-size: 4vw;
+    }
+
+    .subheading {
+        font-size: 3.5vw;
+    }
+
+    .description {
+        font-size: 2vw;
+    }
 }

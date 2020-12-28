@@ -18,7 +18,7 @@ const WomenResourcesMenu = () => {
           <div className="text-btn">Women in CS</div>
         </Button>
         <Collapse isOpen={isOpen}>
-          <Card>
+          <Card style={{ marginTop: '1.2vh' }}>
             <CardBody>
               <div>
                 <Link to="girls_who_code" smooth class="Subheading" style={{ color: '#e36154' }}>

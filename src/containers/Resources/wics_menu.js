@@ -17,7 +17,7 @@ const WicsResourcesMenu = () => {
           <div className="text-btn">WiCS</div>
         </Button>
         <Collapse isOpen={isOpen}>
-          <Card>
+          <Card style={{ marginTop: '1.2vh' }}>
             <CardBody>
               <div>
                 <Link to="mentorships" smooth class="Subheading" style={{ color: '#e36154' }}>

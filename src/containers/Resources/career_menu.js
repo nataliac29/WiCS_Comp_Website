@@ -4,7 +4,6 @@ import {
 } from 'reactstrap'
 import { Link } from 'react-scroll'
 import { MenuContainer } from './styles'
-import 'bootstrap/dist/css/bootstrap.css'
 
 const CareerResourcesMenu = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -18,7 +17,7 @@ const CareerResourcesMenu = () => {
           <div className="text-btn">Careers</div>
         </Button>
         <Collapse isOpen={isOpen}>
-          <Card>
+          <Card style={{ marginTop: '1.2vh' }}>
             <CardBody>
               <div>
                 <Link to="career_paths" smooth class="Subheading" style={{ color: '#e36154' }}>
