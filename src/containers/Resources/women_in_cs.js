@@ -4,14 +4,14 @@ import GirlsWhoCode from './girlswhocode.png'
 import WECode from './wecode.png'
 
 const WomenCS = () => (
-  <div style={{ paddingBottom: '10vh' }}>
-    <Subtitle>Women in CS</Subtitle>
+  <div>
+    <Subtitle className="subheading">Women in CS</Subtitle>
     <hr style={{
       color: '#e36154', backgroundColor: '#e36154', height: 2, borderColor: '#e36154', width: '650px',
     }}
     />
-    <Subheading name="girls_who_code">Girls Who Code</Subheading>
-    <Description class="flex flex-row" style={{ display: 'flex' }}>
+    <Subheading name="girls_who_code" className="subheading">Girls Who Code</Subheading>
+    <Description class="flex flex-row" className="description" style={{ display: 'flex' }}>
       <div>
         Harvard WiCS supports women interested in STEM
         through
@@ -33,7 +33,7 @@ const WomenCS = () => (
       </div>
     </Description>
     <Subheading name="WECode">WECode Conference</Subheading>
-    <Description class="flex flex-row" style={{ display: 'flex' }}>
+    <Description class="flex flex-row" className="description" style={{ display: 'flex' }}>
       <div>
         The
         {' '}

@@ -2,37 +2,25 @@ import styled from 'styled-components'
 
 export const DropdownButtons = styled.div`
     display: flex;
-    padding-left: 3vw;
-    padding-right: 3vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 2vh;
 
 `
 export const MenuContainer = styled.div`
     display: flex;
     font-family: 'Roboto', sans-serif;
-    font-weight: 700;
     letter-spacing:2px;
     line-height: 1em;
-    padding-left: 5vw;
-    padding-right: 5vw;
     flex-direction: column;
-    justify-content: center;
-    margin-top: 2vh;
+    justify-content: space-around;
+    width: 17vw;
+    margin-top: 1vh;
+    margin-left: 1vh;
+    margin-right: 1vh;
 
-`
-export const ButtonContainer = styled.div`
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
-    letter-spacing:2px;
-    line-height: 1em;
-    flex-direction: row;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    margin-top: 5vh;
 `
 export const Welcome = styled.div`
     display: flex;
@@ -41,7 +29,7 @@ export const Welcome = styled.div`
     letter-spacing:2px;
     line-height: 1em;
     margin-left: 5vw;
-    margin-top: 8vh;
+    margin-top: 6vh;
     font-size: 3em;
     color: #e36154;
 `

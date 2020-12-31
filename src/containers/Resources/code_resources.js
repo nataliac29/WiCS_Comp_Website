@@ -7,13 +7,13 @@ import './resources_buttons.css'
 
 const CodeResources = () => (
   <div>
-    <Subtitle>Coding Resources</Subtitle>
+    <Subtitle className="subtitle">Coding Resources</Subtitle>
     <hr style={{
       color: '#e36154', backgroundColor: '#e36154', height: 2, borderColor: '#e36154', width: '600px',
     }}
     />
-    <Subheading name="coding_practice">Coding Practice</Subheading>
-    <Description>
+    <Subheading name="coding_practice" className="subheading">Coding Practice</Subheading>
+    <Description className="description">
       If you know of any online learning resources, feel free to add them to
       {' '}
       <a
@@ -34,8 +34,8 @@ const CodeResources = () => (
       .
     </Description>
 
-    <Subheading name="interview_prep">Technical Interview Prep</Subheading>
-    <Description>
+    <Subheading name="interview_prep" className="subheading">Technical Interview Prep</Subheading>
+    <Description className="description">
       WiCS&apos;s 2019 Technical Recruiting Guide has great resources for those who are looking
       to prep for upcoming technical interviews.
       {' '}
@@ -54,7 +54,6 @@ const CodeResources = () => (
         2019 Technical Recruiting Guide
       </a>
     </Description>
-
   </div>
 )
 export default CodeResources

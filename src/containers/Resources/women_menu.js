@@ -4,7 +4,7 @@ import {
 } from 'reactstrap'
 import { Link } from 'react-scroll'
 import { MenuContainer } from './styles'
-import 'bootstrap/dist/css/bootstrap.css'
+import './custom.css'
 
 const WomenResourcesMenu = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -13,10 +13,12 @@ const WomenResourcesMenu = () => {
 
   return (
     <div>
-      <MenuContainer>
-        <Button color="primary" onClick={toggle} style={{ marginBottom: '1rem' }}>Women in CS Resources!</Button>
+      <MenuContainer className="menu-btn">
+        <Button className="button" onClick={toggle}>
+          <div className="text-btn">Women in CS</div>
+        </Button>
         <Collapse isOpen={isOpen}>
-          <Card>
+          <Card style={{ marginTop: '1.2vh' }}>
             <CardBody>
               <div>
                 <Link to="girls_who_code" smooth class="Subheading" style={{ color: '#e36154' }}>

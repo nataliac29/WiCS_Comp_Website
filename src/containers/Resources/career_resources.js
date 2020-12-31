@@ -7,13 +7,13 @@ import './resources_buttons.css'
 
 const CareerResources = () => (
   <div>
-    <Subtitle>Career Opportunities</Subtitle>
+    <Subtitle className="subtitle">Career Opportunities</Subtitle>
     <hr style={{
       color: '#e36154', backgroundColor: '#e36154', height: 2, borderColor: '#e36154', width: '650px',
     }}
     />
-    <Subheading name="career_paths">Career Paths</Subheading>
-    <Description>
+    <Subheading name="career_paths" className="subheading">Career Paths</Subheading>
+    <Description className="description">
       There are a variety of paths that many people take after (or during) college, including
       pursuing grad school,traveling, taking time off, creating startups, academic research,
       or finding an industry job. WiCS has compiled info on some of these options in a shared
@@ -26,10 +26,8 @@ const CareerResources = () => (
         WiCS Resources Folder
       </a>
     </Description>
-
-
-    <Subheading name="referrals">Referrals</Subheading>
-    <Description>
+    <Subheading name="referrals" className="subheading">Referrals</Subheading>
+    <Description className="description">
       A few WiCS members have volunteered to give referrals or pass along information about
       previous places they have worked at. They have included the materials they need from
       members if they would like to get a referral or recieve more information:
@@ -40,23 +38,6 @@ const CareerResources = () => (
       >
         Referrals
       </a>
-
-    </Description>
-
-    <Subheading name="internship_opportunities">Internships Opportunities</Subheading>
-    <Description>
-      Are you a freshman or sophomore looking for an internship? WiCS has compiled a list of
-      companies with programs aimed towards first and second year students. We have also uploaded
-      slides from presentations for those who are interested in Product Management, as well as the
-      WiCS technical recruiting guide.
-      <br />
-      <a
-        href="https://drive.google.com/drive/folders/1ZMXvgv3YYduuUpwU9CdYqvuP6dfyyAuv?usp=sharing"
-        className="resources_button"
-      >
-        Career: Software Engineering and PM Folder
-      </a>
-
     </Description>
   </div>
 )
