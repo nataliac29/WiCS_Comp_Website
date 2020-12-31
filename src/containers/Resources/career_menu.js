@@ -29,11 +29,6 @@ const CareerResourcesMenu = () => {
                   Referrals
                 </Link>
               </div>
-              <div>
-                <Link to="internship_opportunities" smooth class="Subheading" style={{ color: '#e36154' }}>
-                  Internship Opportunities
-                </Link>
-              </div>
             </CardBody>
           </Card>
         </Collapse>
