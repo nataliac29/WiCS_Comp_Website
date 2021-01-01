@@ -26,9 +26,9 @@ const WicsResources = () => (
         This mentorship program is one of the largest on campus--over 200 women in tech participate
         and have said that WiCS mentorship has been an incredibly beneficial experience.
         <br />
-        <a href="https://www.harvardwics.com/mentorships" className="resources_button">
+        <button type="button" href="https://www.harvardwics.com/mentorships" className="resources_button">
           Read More and Sign Up
-        </a>
+        </button>
       </div>
       <div>
         <img

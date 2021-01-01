@@ -1,12 +1,14 @@
 .resources_button {
-    border-radius:10%;
-    text-decoration:none;
-    font-family:'Roboto',sans-serif;
+    border-radius:5px;
+    text-decoration: none;
+    font-family:'Roboto', sans-serif;
     color:#FFFFFF;
     background-color:#4a55af;
-    text-align:center;
+    text-align: center;
     transition: all 0.2s;
-    width: 100%;
+    margin: 5px;
+    outline: none;
+    border: none;
 }
 .resources_button:hover{
     background-color:#ff8946;
