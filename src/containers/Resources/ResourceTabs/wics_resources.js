@@ -1,8 +1,8 @@
 import React from 'react'
 import {
   Subtitle, Subheading, Description,
-} from './styles'
-import Mentorship from './csmentorship.png'
+} from '../styles'
+import Mentorship from '../../../assets/csmentorship.png'
 import 'bootstrap/dist/css/bootstrap.css'
 import './resources_buttons.css'
 

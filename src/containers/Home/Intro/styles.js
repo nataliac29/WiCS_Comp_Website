@@ -8,7 +8,7 @@ export const Welcome = styled.div`
     letter-spacing:2px;
     line-height: 1em;
     margin-left: 5vw;
-    margin-top: 8vh;
+    margin-top: 15vh;
     font-size: 3em;
     color: #e36154;
 `
@@ -25,9 +25,9 @@ export const Paragraph = styled.div`
 `
 export const Intro = styled.div`
     display: flex;
-    margin-top: 10vh;    
+    height: 79vh;
+
 `
 export const Arrow = styled.img`
     position: sticky;
-    bottom: 20px;
 `

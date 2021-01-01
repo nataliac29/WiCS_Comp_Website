@@ -63,7 +63,7 @@ const ProgressChart = ({ data1 }) => (
       <div style={{ display: 'flex' }}>
         <div style={{ width: '30%' }} />
         <TableContainer component={Paper}>
-          <TableStyle>
+          <TableStyle style={{ letterSpacing: '.05em' }}>
             <TableHead>
               <TableRow>
                 <TableCell>Category</TableCell>

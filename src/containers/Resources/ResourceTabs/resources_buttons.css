@@ -1,16 +1,12 @@
 .resources_button {
-    display:inline-block;
-    padding:0.3em 1.2em;
-    margin:1vh 0.3em 0.3em 1vh;
-    border-radius:3em;
-    box-sizing: border-box;
+    border-radius:10%;
     text-decoration:none;
     font-family:'Roboto',sans-serif;
-    font-weight:300;
     color:#FFFFFF;
     background-color:#4a55af;
     text-align:center;
     transition: all 0.2s;
+    width: 100%;
 }
 .resources_button:hover{
     background-color:#ff8946;

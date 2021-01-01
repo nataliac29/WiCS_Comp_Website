@@ -1,32 +1,33 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
+export const ShadowContainer = styled.div`
+    width: 100%;
+    box-shadow: ${props => (props.hover ? '0px 10px 20px rgba(0, 0, 0, 0.19), 0px 6px 6px rgba(0, 0, 0, 0.26)' : '0')};
+`
+
 export const Container = styled.div`
-    height: 15vh;
     display: flex;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     letter-spacing:2px;
     line-height: 1em;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding: 2vh 5vw 0 5vw;
     justify-content: space-between;
-    margin-top: 2vh;
-
 `
 export const NavLinks = styled.div`
     display: flex;
-    padding-top: 1vh;
-    padding-bottom: 5vh;
-    flex-direction: column;
-    justify-content: space-between;
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1vh 0 5vh 10vh;
 `
 export const NavBLink = styled(Link)`
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-decoration: none;
     color: black;
     cursor: pointer;
-    
+    &:hover {
+        color: #e36055;
+        outline: none;
+        text-decoration: none;
+    }
 `

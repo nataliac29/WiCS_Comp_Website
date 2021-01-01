@@ -17,6 +17,7 @@
     "graphql": "^14.5.8",
     "graphql-tag": "^2.10.1",
     "husky": "^4.2.5",
+    "prop-types": "^15.7.2",
     "react": "^16.14.0",
     "react-bootstrap": "^1.4.0",
     "react-dom": "^16.14.0",

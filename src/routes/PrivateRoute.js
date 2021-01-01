@@ -14,8 +14,9 @@ const PrivateRoute = ({
       {...rest}
       render={() => (isSignedIn ? (
         <>
-          <AuthenticatedNavbar />
-          {children}
+          <AuthenticatedNavbar>
+            {children}
+          </AuthenticatedNavbar>
         </>
       ) : (
         <Redirect

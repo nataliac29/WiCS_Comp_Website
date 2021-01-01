@@ -1,7 +1,7 @@
 import React from 'react'
 import {
   Subtitle, Subheading, Description,
-} from './styles'
+} from '../styles'
 import 'bootstrap/dist/css/bootstrap.css'
 import './resources_buttons.css'
 
