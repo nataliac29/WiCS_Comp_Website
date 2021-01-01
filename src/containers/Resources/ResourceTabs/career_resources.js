@@ -19,12 +19,13 @@ const CareerResources = () => (
       or finding an industry job. WiCS has compiled info on some of these options in a shared
       google folder, and you can find specific pages here:
       <br />
-      <a
+      <button
+        type="button"
         href="https://drive.google.com/drive/folders/1gprMZ-SLjrzwnml75UPxjR72-88vFkLb?usp=sharing"
         className="resources_button"
       >
         WiCS Resources Folder
-      </a>
+      </button>
     </Description>
     <Subheading name="referrals" className="subheading">Referrals</Subheading>
     <Description className="description">
@@ -32,12 +33,13 @@ const CareerResources = () => (
       previous places they have worked at. They have included the materials they need from
       members if they would like to get a referral or recieve more information:
       <br />
-      <a
+      <button
+        type="button"
         href="https://docs.google.com/spreadsheets/d/1k0U2-VWoXeoWypOv5-AQYoWf3C7P5wDbNjcd9T44oYU/edit?usp=sharing"
         className="resources_button"
       >
         Referrals
-      </a>
+      </button>
     </Description>
   </div>
 )

@@ -47,12 +47,13 @@ const CodeResources = () => (
       and &quot;Cracking the Coding Interview&quot; by Gayle Laakman McDowell are also great
       resources for practice and review of CS concepts.
       <br />
-      <a
+      <button
+        type="button"
         href="https://docs.google.com/document/d/16HVtQ0bYrUdthIorEOS47w71rKh9WEGaa6wsj3OJr8o/edit?usp=sharing"
         className="resources_button"
       >
         2019 Technical Recruiting Guide
-      </a>
+      </button>
     </Description>
   </div>
 )
