@@ -23,7 +23,7 @@ export const Intro = styled.div`
     font-weight: 500;
     letter-spacing: 2px;
     line-height: 1em;
-    font-size: 1.5em;
+    font-size: 2em;
     text-align: center;
     margin-top: 5vh;
     color: #e36154;
@@ -36,4 +36,20 @@ export const Bio = styled.div`
     font-size:0.75em;
     font-weight: 200;
     text-align: center;
+`
+export const Arrow = styled.img`
+    position: sticky;
+`
+export const Whitebox = styled.div`
+    background-color: white;
+`
+export const Title = styled.div`
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 1em;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 5vh;
+    color: #e36154;
 `
