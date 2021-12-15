@@ -1,13 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './progressline.css'
 
 const ProgressLine = ({ done }) => {
-  const [style, setStyle] = React.useState({})
+  const [style, setStyle] = useState({})
 
   setTimeout(() => {
     const newStyle = {
       opacity: 1,
-      width: `${done}%`,
+      width: `${done.toFixed(1)}%`,
     }
     setStyle(newStyle)
   }, 1000)
@@ -15,7 +15,7 @@ const ProgressLine = ({ done }) => {
   return (
     <div className="progress">
       <div className="progress-done" style={style}>
-        {done}
+        {done.toFixed(1)}
         %
       </div>
     </div>

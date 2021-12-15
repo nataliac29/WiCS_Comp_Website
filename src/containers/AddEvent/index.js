@@ -1,6 +1,6 @@
 import React from 'react'
 import { useQuery } from '@apollo/react-hooks'
-import ImageUploader from 'react-images-upload'
+// import ImageUploader from 'react-images-upload'
 import {
   Welcome, InnerDiv, Button, Input2, FormDiv, UploadDiv, OuterDiv,
 } from './styles'
@@ -34,6 +34,10 @@ const AddEvent = () => {
       </div>
     )
   }
+
+  const handleSubmit = async () => {
+    // const selectedFile = document.getElementById('input').files[0]
+  }
   return (
     <div>
       <Welcome style={{ fontSize: '3em', marginTop: '8vh' }}>
@@ -45,16 +49,12 @@ const AddEvent = () => {
       <OuterDiv>
         <InnerDiv right={false}>
           <UploadDiv>
-            <ImageUploader
-              withIcon
-              buttonText="Choose Image"
-              imgExtension={['.jpg', '.gif', '.png', '.gif']}
-              maxFileSize={5242880}
-              label="Max file size: 5mb, accepted: jpg, gif, png"
-              buttonStyles={{ color: 'white', backgroundColor: '#dd9993' }}
-              fileContainerStyle={{ borderWidth: '0' }}
+            <input
+              type="file"
+              id="input"
+              accept="image/png, image/jpeg, image/jpg"
             />
-            <Button type="button" style={{ outline: 'none' }}>Add</Button>
+            <Button type="button" style={{ outline: 'none' }} onClick={handleSubmit}>Add</Button>
           </UploadDiv>
           <FormDiv>
             <p style={{

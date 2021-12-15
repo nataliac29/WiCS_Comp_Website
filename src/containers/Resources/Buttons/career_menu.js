@@ -6,6 +6,7 @@ import { Link } from 'react-scroll'
 import { MenuContainer } from '../styles'
 
 const CareerResourcesMenu = ({ toggle, onTabChange }) => {
+  // eslint-disable-next-line
   const handleTabChange = useCallback(() => (toggle === '2' ? onTabChange('') : onTabChange('2')), [onTabChange])
   return (
     <div>

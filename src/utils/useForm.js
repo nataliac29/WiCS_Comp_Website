@@ -21,6 +21,7 @@ export default (initVal, yupSchema, initFun) => {
       Object.fromEntries(errs.inner.map(({ path, message }) => [path, message])),
     )
     return false
+    // eslint-disable-next-line
   }), [state])
 
   return {

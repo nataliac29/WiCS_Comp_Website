@@ -35,6 +35,7 @@ const GlobalContext = ({ children }) => {
     }
 
     return obj
+    // eslint-disable-next-line
   }, [state, data])
 
   return (

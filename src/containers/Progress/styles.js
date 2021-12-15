@@ -24,3 +24,8 @@ export const Container = styled.div`
     padding-top: 2vh;
     background-color: white;
 `
+export const LoadingContainer = styled.div`
+    width: auto;
+    display: flex;
+    justify-content: center;
+`

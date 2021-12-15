@@ -24,7 +24,7 @@ const Body = () => (
         alt="diverse women together"
         src={Women}
         style={{
-          width: '38vw', height: 'undefined', aspectRatio: '3',
+          width: '50%', height: 'undefined', aspectRatio: '3',
         }}
       />
     </Intro>

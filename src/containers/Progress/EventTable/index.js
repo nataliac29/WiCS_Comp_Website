@@ -37,7 +37,7 @@ const useRowStyles = makeStyles({
   },
 })
 
-const Row = ({ data, data3 }) => {
+const Row = ({ data }) => {
   const [open, setOpen] = React.useState(false)
   const classes = useRowStyles()
   return (
@@ -49,11 +49,11 @@ const Row = ({ data, data3 }) => {
           </IconButton>
         </TableCell>
         <TableCell component="th" scope="row">
-          {data.eventname}
+          {data.event.eventname}
         </TableCell>
-        <TableCell align="left">{data.type}</TableCell>
-        <TableCell align="left">{data.datetime}</TableCell>
-        <TableCell align="left">{data.des}</TableCell>
+        <TableCell align="left">{data.event.type}</TableCell>
+        <TableCell align="left">{data.event.datetime}</TableCell>
+        <TableCell align="left">{data.event.des}</TableCell>
       </TableRow>
       <TableRow>
         <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={5}>
@@ -73,17 +73,15 @@ const Row = ({ data, data3 }) => {
                   </TableRow>
                 </TableHead>
                 <TableBody>
-                  {(data3.filter(eid => eid.eventId === data.id)).map(ci => (
-                    <TableRow key={ci.id}>
-                      <TableCell />
-                      <TableCell component="th" scope="row">
-                        {ci.des}
-                      </TableCell>
-                      <TableCell align="left">{ci.photo}</TableCell>
-                      <TableCell align="left">{ci.addedAt}</TableCell>
-                      <TableCell align="left">{ci.approved ? 'Approved' : 'Not Approved'}</TableCell>
-                    </TableRow>
-                  ))}
+                  <TableRow key={data.id}>
+                    <TableCell />
+                    <TableCell component="th" scope="row">
+                      {data.des}
+                    </TableCell>
+                    <TableCell align="left">{data.photo}</TableCell>
+                    <TableCell align="left">{data.addedAt}</TableCell>
+                    <TableCell align="left">{data.approved}</TableCell>
+                  </TableRow>
                 </TableBody>
               </Table>
             </Box>
@@ -94,7 +92,7 @@ const Row = ({ data, data3 }) => {
   )
 }
 
-const EventTable = ({ data1, data3 }) => (
+const EventTable = ({ trackEvents }) => (
   <div style={{ display: 'flex', flexDirection: 'column' }}>
     <ThemeProvider theme={theme}>
       <link
@@ -131,8 +129,8 @@ const EventTable = ({ data1, data3 }) => (
               </TableRow>
             </TableHead>
             <TableBody>
-              {data1.map(data => (
-                <Row id={data.id} data={data} data3={data3} />
+              {trackEvents.map(data => (
+                <Row id={data.id} data={data} />
               ))}
             </TableBody>
           </Table>
